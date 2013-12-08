@@ -1,0 +1,42 @@
+/*
+Theme Name: Trustme - Responsive WordPress Blog / Magazine Theme
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+
+.widget-slider, .widget-carousel { direction: ltr; }
+.flexslider .slides > li {text-align:right;direction:rtl;}
+.widget-title h3, .footer-widget-title h3 { padding: 3px 0 3px 10px; }
+.views-ico, .date-ico, .comments-ico, .user-ico, .comment-date-ico { margin-right: 0;margin-left: 10px;float: right; }
+.popular-post-widget .meta-comments {float: right;}
+.big-comments-ico, .small-comments-ico {float: left;}
+.pagination {float: right;}
+.footer-widget-title h3 {padding: 3px 10px 3px 10px;}
+ul#cbox li {margin-right: 0;margin-left: 15px;}
+.news-big-title {margin-left: 0;margin-right: 20px;}
+#social-counter li {float: right;margin-right: 0;margin-left: 25px;}
+.category-item > a, .title-block .category-item > a {margin-right: 0;}
+.rating-stars {float: left;}
+.criteria_name {float: right;margin-right: 0;margin-left: 15px;}
+.overall_score > .score_value {float: left;margin-left: 0;margin-right: 15px;border-right: 2px solid #DDD;border-left: none;}
+.overall_score > .score_name {padding-left: 0;padding-right: 10px;}
+#author-avatar img {float: right;padding-right: 0;padding-left: 10px;}
+.related-posts-single li {float: right;}
+#wide-sidebar .related-posts-single li {margin-right: 0;margin-left: 10px;}
+.comments-count-title {background: url(img/comments-big.png) right 11px no-repeat;padding-left: 0;padding-right: 25px;}
+#reply-title {background: url(img/reply-big.png) right 10px no-repeat;padding-left: 0;padding-right: 25px;}
+#contacts-form input[type=text], #contacts-form input[type=password], #contacts-form input[type=email], #contacts-form input[type=url] {float: right;}

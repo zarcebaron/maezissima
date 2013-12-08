@@ -1,0 +1,2185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Trustme - Responsive WordPress Blog / Magazine Theme v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-01-12 19:47:54+0000\n"
+"Last-Translator: admin <zerge.com@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/classes/class.options_machine.php:456
+#@ color-theme-framework
+msgid "Last Backup : "
+msgstr ""
+
+#: admin/front-end/options.php:42
+#: admin/front-end/options.php:66
+#@ color-theme-framework
+msgid "Save All Changes"
+msgstr ""
+
+#: admin/front-end/options.php:67
+#@ color-theme-framework
+msgid "Options Reset"
+msgstr ""
+
+#: admin/functions/functions.mediauploader.php:20
+#@ color-theme-framework
+msgid "Options"
+msgstr ""
+
+#: admin/functions/functions.mediauploader.php:210
+#@ color-theme-framework
+msgid "Gallery"
+msgstr ""
+
+#: admin/functions/functions.mediauploader.php:210
+#@ color-theme-framework
+msgid "Previously Uploaded"
+msgstr ""
+
+#: admin/functions/functions.options.php:139
+#@ color-theme-framework
+msgid "General Settings"
+msgstr ""
+
+#: admin/functions/functions.options.php:161
+#@ color-theme-framework
+msgid "Type of Logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:162
+#@ color-theme-framework
+msgid "Select your logo type ( Image or Text )"
+msgstr ""
+
+#: admin/functions/functions.options.php:169
+#@ color-theme-framework
+msgid "Logo Upload"
+msgstr ""
+
+#: admin/functions/functions.options.php:170
+#: admin/functions/functions.options.php:474
+#@ color-theme-framework
+msgid "Upload images using the native media uploader, or define the URL directly"
+msgstr ""
+
+#: admin/functions/functions.options.php:175
+#@ color-theme-framework
+msgid "Logo Text"
+msgstr ""
+
+#: admin/functions/functions.options.php:176
+#@ color-theme-framework
+msgid "Enter text for logo"
+msgstr ""
+
+#: admin/functions/functions.options.php:181
+#@ color-theme-framework
+msgid "Logo Slogan"
+msgstr ""
+
+#: admin/functions/functions.options.php:182
+#@ color-theme-framework
+msgid "Enter text for logo slogan"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:259
+#@ color-theme-framework
+msgid "Youtube"
+msgstr ""
+
+#: admin/functions/functions.options.php:521
+#@ color-theme-framework
+msgid "Google"
+msgstr ""
+
+#: admin/functions/functions.options.php:503
+#: functions/trustme-social-counter-widget.php:255
+#@ color-theme-framework
+msgid "Facebook"
+msgstr ""
+
+#: admin/functions/functions.options.php:509
+#: functions/trustme-social-counter-widget.php:251
+#@ color-theme-framework
+msgid "Twitter"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:159
+#@ color-theme-framework
+msgid "RSS"
+msgstr ""
+
+#: admin/functions/functions.options.php:187
+#@ color-theme-framework
+msgid "Custom Favicon"
+msgstr ""
+
+#: admin/functions/functions.options.php:188
+#@ color-theme-framework
+msgid "Upload a 16px x 16px Png/Gif image that will represent your website's favicon."
+msgstr ""
+
+#: admin/functions/functions.options.php:193
+#@ color-theme-framework
+msgid "Tracking Code"
+msgstr ""
+
+#: admin/functions/functions.options.php:194
+#@ color-theme-framework
+msgid "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme."
+msgstr ""
+
+#: admin/functions/functions.options.php:223
+#@ color-theme-framework
+msgid "Scheme Color"
+msgstr ""
+
+#: admin/functions/functions.options.php:224
+#@ color-theme-framework
+msgid "Pick a color scheme (default: #E64946)"
+msgstr ""
+
+#: admin/functions/functions.options.php:250
+#@ color-theme-framework
+msgid "Body Background Color"
+msgstr ""
+
+#: admin/functions/functions.options.php:251
+#@ color-theme-framework
+msgid "Pick a background color (default: #f7ede4)."
+msgstr ""
+
+#: admin/functions/functions.options.php:256
+#@ color-theme-framework
+msgid "Image Upload For background"
+msgstr ""
+
+#: admin/functions/functions.options.php:257
+#: admin/functions/functions.options.php:286
+#: admin/functions/functions.options.php:324
+#@ color-theme-framework
+msgid "Upload images for background using the native media uploader, or define the URL directly"
+msgstr ""
+
+#: admin/functions/functions.options.php:263
+#@ color-theme-framework
+msgid "Background Images"
+msgstr ""
+
+#: admin/functions/functions.options.php:264
+#@ color-theme-framework
+msgid "Select a background pattern."
+msgstr ""
+
+#: admin/functions/functions.options.php:200
+#@ color-theme-framework
+msgid "Google Fonts Link Stylesheet"
+msgstr ""
+
+#: admin/functions/functions.options.php:201
+#@ color-theme-framework
+msgid "Paste code for stylesheet from Google Fonts"
+msgstr ""
+
+#: admin/functions/functions.options.php:206
+#@ color-theme-framework
+msgid "Google Fonts Family"
+msgstr ""
+
+#: admin/functions/functions.options.php:207
+#@ color-theme-framework
+msgid "Paste code for Fonts from Google"
+msgstr ""
+
+#: admin/functions/functions.options.php:356
+#@ color-theme-framework
+msgid "Select a layout for Single post template"
+msgstr ""
+
+#: admin/functions/functions.options.php:367
+#@ color-theme-framework
+msgid "Select a layout for Blog template"
+msgstr ""
+
+#: admin/functions/functions.options.php:406
+#@ color-theme-framework
+msgid "Show/Hide blog and category meta"
+msgstr ""
+
+#: admin/functions/functions.options.php:413
+#@ color-theme-framework
+msgid "Thumb type for video posts"
+msgstr ""
+
+#: admin/functions/functions.options.php:414
+#@ color-theme-framework
+msgid "Select a thumb type for video posts"
+msgstr ""
+
+#: admin/functions/functions.options.php:421
+#@ color-theme-framework
+msgid "Use Excerpt or Content Function?"
+msgstr ""
+
+#: admin/functions/functions.options.php:422
+#@ color-theme-framework
+msgid "Select a Excerpt (automatically) or Content (More tag)"
+msgstr ""
+
+#: admin/functions/functions.options.php:429
+#@ color-theme-framework
+msgid "Featured image"
+msgstr ""
+
+#: admin/functions/functions.options.php:430
+#@ color-theme-framework
+msgid "Show or Hide featured image in the single post"
+msgstr ""
+
+#: admin/functions/functions.options.php:437
+#@ color-theme-framework
+msgid "Choose the comments type"
+msgstr ""
+
+#: admin/functions/functions.options.php:444
+#@ color-theme-framework
+msgid "Facebook App ID"
+msgstr ""
+
+#: admin/functions/functions.options.php:445
+#@ color-theme-framework
+msgid "Enter the Facebook App ID of your app (required if Facebook comments type selected)"
+msgstr ""
+
+#: admin/functions/functions.options.php:450
+#@ color-theme-framework
+msgid "Disqus shortname "
+msgstr ""
+
+#: admin/functions/functions.options.php:451
+#@ color-theme-framework
+msgid "Enter the your website's shortname (required if Disqus comments type selected)"
+msgstr ""
+
+#: admin/functions/functions.options.php:463
+#@ color-theme-framework
+msgid "Ads Banner Settings"
+msgstr ""
+
+#: admin/functions/functions.options.php:473
+#@ color-theme-framework
+msgid "Site Header Banner Upload"
+msgstr ""
+
+#: admin/functions/functions.options.php:479
+#@ color-theme-framework
+msgid "Site Header Banner URL"
+msgstr ""
+
+#: admin/functions/functions.options.php:480
+#@ color-theme-framework
+msgid "Enter clickthrough url for banner in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:485
+#@ color-theme-framework
+msgid "Site Header Ads\\Banner Code"
+msgstr ""
+
+#: admin/functions/functions.options.php:486
+#@ color-theme-framework
+msgid "Paste your Google Adsense (or other) code here."
+msgstr ""
+
+#: admin/functions/functions.options.php:547
+#@ color-theme-framework
+msgid "Copyrights"
+msgstr ""
+
+#: admin/functions/functions.options.php:557
+#@ color-theme-framework
+msgid "Enter your copyrights"
+msgstr ""
+
+#: admin/functions/functions.options.php:564
+#@ color-theme-framework
+msgid "Additional info (text or banner)"
+msgstr ""
+
+#: admin/functions/functions.options.php:572
+#@ color-theme-framework
+msgid "Backup Options"
+msgstr ""
+
+#: admin/functions/functions.options.php:575
+#@ color-theme-framework
+msgid "Backup and Restore Options"
+msgstr ""
+
+#: admin/functions/functions.options.php:582
+#@ color-theme-framework
+msgid "Transfer Theme Options Data"
+msgstr ""
+
+#: comments.php:8
+#@ color-theme-framework
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:18
+#@ color-theme-framework
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:18
+#@ color-theme-framework
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:28
+#@ color-theme-framework
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:41
+#@ color-theme-framework
+msgid "You must be"
+msgstr ""
+
+#: comments.php:41
+#@ color-theme-framework
+msgid "logged in"
+msgstr ""
+
+#: comments.php:41
+#@ color-theme-framework
+msgid "to post a comment."
+msgstr ""
+
+#: content-archive.php:35
+#, php-format
+#@ color-theme-framework
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: content-archive.php:37
+#, php-format
+#@ color-theme-framework
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: content-archive.php:37
+#@ color-theme-framework
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: content-archive.php:39
+#, php-format
+#@ color-theme-framework
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: content-archive.php:39
+#@ color-theme-framework
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: content-archive.php:137
+#: content-archive.php:220
+#: content-author.php:138
+#: content-author.php:221
+#: content-blog.php:146
+#: content-blog.php:226
+#: content-category.php:131
+#: content-category.php:214
+#: content-search.php:134
+#: content-search.php:217
+#: content-tag.php:130
+#: content-tag.php:213
+#: functions/trustme-blog-widget.php:188
+#: functions/trustme-blog-widget.php:271
+#@ color-theme-framework
+msgid "View all posts in "
+msgstr ""
+
+#: content-archive.php:178
+#: content-archive.php:258
+#: content-author.php:179
+#: content-author.php:259
+#: content-blog.php:184
+#: content-blog.php:256
+#: content-category.php:172
+#: content-category.php:252
+#: content-search.php:175
+#: content-search.php:255
+#: content-tag.php:171
+#: content-tag.php:251
+#: functions/trustme-blog-widget.php:220
+#: functions/trustme-blog-widget.php:301
+#, php-format
+#@ color-theme-framework
+msgid "Permalink to %s"
+msgstr ""
+
+#: widget-video.php:45
+#@ color-theme-framework
+msgid "Watch Youtube Video"
+msgstr ""
+
+#: widget-video.php:67
+#@ color-theme-framework
+msgid "Watch Vimeo Video"
+msgstr ""
+
+#: widget-video.php:87
+#@ color-theme-framework
+msgid "Watch DailyMotion Video"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:40
+#@ color-theme-framework
+msgid "1 Column Horizontal Magazine Widget (show recent posts)."
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:167
+#: functions/trustme-1-column-horiz-magazine-widget.php:233
+#: functions/trustme-1-column-horiz-magazine-widget.php:238
+#: functions/trustme-1-column-horiz-magazine-widget.php:271
+#: functions/trustme-1-column-vert-magazine-widget.php:160
+#: functions/trustme-1-column-vert-magazine-widget.php:217
+#: functions/trustme-1-column-vert-magazine-widget.php:236
+#: functions/trustme-1-column-vert-magazine-widget.php:269
+#: functions/trustme-2-columns-magazine-widget.php:167
+#: functions/trustme-2-columns-magazine-widget.php:229
+#: functions/trustme-2-columns-magazine-widget.php:247
+#: functions/trustme-2-columns-magazine-widget.php:280
+#: functions/trustme-2-columns-magazine-widget.php:397
+#: functions/trustme-2-columns-magazine-widget.php:449
+#: functions/trustme-2-columns-magazine-widget.php:468
+#: functions/trustme-2-columns-magazine-widget.php:501
+#: functions/trustme-3-columns-magazine-widget.php:175
+#: functions/trustme-3-columns-magazine-widget.php:235
+#: functions/trustme-3-columns-magazine-widget.php:252
+#: functions/trustme-3-columns-magazine-widget.php:285
+#: functions/trustme-3-columns-magazine-widget.php:401
+#: functions/trustme-3-columns-magazine-widget.php:452
+#: functions/trustme-3-columns-magazine-widget.php:469
+#: functions/trustme-3-columns-magazine-widget.php:501
+#: functions/trustme-3-columns-magazine-widget.php:616
+#: functions/trustme-3-columns-magazine-widget.php:667
+#: functions/trustme-3-columns-magazine-widget.php:684
+#: functions/trustme-3-columns-magazine-widget.php:716
+#: functions/trustme-recent-posts-widget.php:105
+#: functions/trustme-recent-posts-widget.php:122
+#: functions/trustme-tabs-widget.php:135
+#: functions/trustme-tabs-widget.php:154
+#: functions/trustme-tabs-widget.php:187
+#@ color-theme-framework
+msgid "Permalink to "
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:342
+#: functions/trustme-1-column-vert-magazine-widget.php:336
+#: functions/trustme-recent-posts-widget.php:223
+#: functions/trustme-tabs-widget.php:298
+#@ color-theme-framework
+msgid "Recent Posts"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:349
+#: functions/trustme-1-column-vert-magazine-widget.php:343
+#: functions/trustme-4ads125x125-widget.php:132
+#: functions/trustme-ads300x250-widget.php:114
+#: functions/trustme-blog-widget.php:437
+#: functions/trustme-categories-widget.php:136
+#: functions/trustme-fblikebox-widget.php:126
+#: functions/trustme-fbsubscribe-widget.php:126
+#: functions/trustme-flickr-widget.php:163
+#: functions/trustme-news-ticker-widget.php:164
+#: functions/trustme-popular-post-widget.php:240
+#: functions/trustme-recent-posts-thumbs-widget.php:151
+#: functions/trustme-recent-posts-widget.php:229
+#: functions/trustme-related-posts-widget.php:127
+#: functions/trustme-search-widget.php:112
+#: functions/trustme-sharethis-widget.php:117
+#: functions/trustme-slider-widget.php:212
+#: functions/trustme-social-counter-widget.php:222
+#: functions/trustme-twitter-widget.php:146
+#@ color-theme-framework
+msgid "Title:"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:354
+#: functions/trustme-1-column-vert-magazine-widget.php:348
+#: functions/trustme-news-ticker-widget.php:179
+#: functions/trustme-recent-posts-thumbs-widget.php:156
+#: functions/trustme-recent-posts-widget.php:234
+#: functions/trustme-slider-widget.php:217
+#: functions/trustme-tabs-widget.php:360
+#@ color-theme-framework
+msgid "Filter by Category:"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:365
+#: functions/trustme-1-column-vert-magazine-widget.php:359
+#: functions/trustme-blog-widget.php:456
+#: functions/trustme-popular-post-widget.php:246
+#: functions/trustme-recent-posts-thumbs-widget.php:167
+#: functions/trustme-recent-posts-widget.php:245
+#: functions/trustme-slider-widget.php:247
+#: functions/trustme-tabs-widget.php:328
+#@ color-theme-framework
+msgid "Number of posts:"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:387
+#: functions/trustme-1-column-vert-magazine-widget.php:381
+#: functions/trustme-2-columns-magazine-widget.php:602
+#: functions/trustme-2-columns-magazine-widget.php:654
+#: functions/trustme-3-columns-magazine-widget.php:825
+#: functions/trustme-3-columns-magazine-widget.php:877
+#: functions/trustme-3-columns-magazine-widget.php:926
+#: functions/trustme-popular-post-widget.php:252
+#: functions/trustme-recent-posts-widget.php:251
+#: functions/trustme-tabs-widget.php:335
+#@ color-theme-framework
+msgid "Show thumbnail image"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:40
+#@ color-theme-framework
+msgid "2 Columns Vertical Magazine Widget (show recent posts)."
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:575
+#: functions/trustme-3-columns-magazine-widget.php:798
+#@ color-theme-framework
+msgid "First Column"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:580
+#: functions/trustme-3-columns-magazine-widget.php:803
+#@ color-theme-framework
+msgid "Title (1st column):"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:585
+#: functions/trustme-3-columns-magazine-widget.php:808
+#@ color-theme-framework
+msgid "Filter by Category (1st column):"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:596
+#: functions/trustme-3-columns-magazine-widget.php:819
+#@ color-theme-framework
+msgid "Number of posts (1st column):"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:629
+#: functions/trustme-3-columns-magazine-widget.php:852
+#@ color-theme-framework
+msgid "Second Column"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:632
+#: functions/trustme-3-columns-magazine-widget.php:855
+#@ color-theme-framework
+msgid "Title (2nd column):"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:637
+#: functions/trustme-3-columns-magazine-widget.php:860
+#@ color-theme-framework
+msgid "Filter by Category (2nd column):"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:648
+#: functions/trustme-3-columns-magazine-widget.php:871
+#@ color-theme-framework
+msgid "Number of posts (2nd column):"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:41
+#@ color-theme-framework
+msgid "Blog Widget"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:462
+#: functions/trustme-tabs-widget.php:350
+#@ color-theme-framework
+msgid "Show date"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:467
+#@ color-theme-framework
+msgid "Show author"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:472
+#@ color-theme-framework
+msgid "Select a Excerpt (automatically) or Content (More tag):"
+msgstr ""
+
+#: functions/trustme-categories-widget.php:128
+#: template-sitemap.php:50
+#@ color-theme-framework
+msgid "Categories"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:121
+#@ color-theme-framework
+msgid "FB Like Box"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:131
+#@ color-theme-framework
+msgid "Facebook Page URL:"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:136
+#: functions/trustme-fbsubscribe-widget.php:153
+#@ color-theme-framework
+msgid "Facebook Language:"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:143
+#: functions/trustme-fbsubscribe-widget.php:160
+#@ color-theme-framework
+msgid "Show Faces"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:148
+#@ color-theme-framework
+msgid "Show Stream"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:153
+#@ color-theme-framework
+msgid "Show Header"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:157
+#: functions/trustme-fbsubscribe-widget.php:145
+#@ color-theme-framework
+msgid "Theme Color:"
+msgstr ""
+
+#: functions/trustme-fbsubscribe-widget.php:42
+#@ color-theme-framework
+msgid "FB Subscribe Widget"
+msgstr ""
+
+#: functions/trustme-fbsubscribe-widget.php:121
+#@ color-theme-framework
+msgid "Facebook Subscribe"
+msgstr ""
+
+#: functions/trustme-fbsubscribe-widget.php:131
+#@ color-theme-framework
+msgid "Profile URL:"
+msgstr ""
+
+#: functions/trustme-fbsubscribe-widget.php:136
+#@ color-theme-framework
+msgid "Layout Style:"
+msgstr ""
+
+#: functions/trustme-flickr-widget.php:156
+#@ color-theme-framework
+msgid "Flickr"
+msgstr ""
+
+#: functions/trustme-flickr-widget.php:170
+#@ color-theme-framework
+msgid "User ID:"
+msgstr ""
+
+#: functions/trustme-flickr-widget.php:176
+#@ color-theme-framework
+msgid "The Number of Displayed Images:"
+msgstr ""
+
+#: functions/trustme-news-ticker-widget.php:40
+#@ color-theme-framework
+msgid "A widget that show latest (featured) posts titles in a scrolling newsticker"
+msgstr ""
+
+#: functions/trustme-news-ticker-widget.php:160
+#@ color-theme-framework
+msgid "Breaking News"
+msgstr ""
+
+#: functions/trustme-news-ticker-widget.php:169
+#: functions/trustme-related-posts-widget.php:133
+#@ color-theme-framework
+msgid "Number of posts to show:"
+msgstr ""
+
+#: functions/trustme-news-ticker-widget.php:175
+#@ color-theme-framework
+msgid "Show Controls"
+msgstr ""
+
+#: functions/trustme-news-ticker-widget.php:190
+#@ color-theme-framework
+msgid "Show:"
+msgstr ""
+
+#: functions/trustme-popular-post-widget.php:40
+#: functions/trustme-tabs-widget.php:40
+#@ color-theme-framework
+msgid "A widget that show popular posts"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:139
+#: functions/trustme-1-column-vert-magazine-widget.php:133
+#: functions/trustme-2-columns-magazine-widget.php:139
+#: functions/trustme-2-columns-magazine-widget.php:371
+#: functions/trustme-3-columns-magazine-widget.php:148
+#: functions/trustme-3-columns-magazine-widget.php:375
+#: functions/trustme-3-columns-magazine-widget.php:590
+#@ color-theme-framework
+msgid "0"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:139
+#: functions/trustme-1-column-vert-magazine-widget.php:133
+#: functions/trustme-2-columns-magazine-widget.php:139
+#: functions/trustme-2-columns-magazine-widget.php:371
+#: functions/trustme-3-columns-magazine-widget.php:148
+#: functions/trustme-3-columns-magazine-widget.php:375
+#: functions/trustme-3-columns-magazine-widget.php:590
+#@ color-theme-framework
+msgid "1"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:139
+#: functions/trustme-1-column-vert-magazine-widget.php:133
+#: functions/trustme-2-columns-magazine-widget.php:139
+#: functions/trustme-2-columns-magazine-widget.php:371
+#: functions/trustme-3-columns-magazine-widget.php:148
+#: functions/trustme-3-columns-magazine-widget.php:375
+#: functions/trustme-3-columns-magazine-widget.php:590
+#@ color-theme-framework
+msgid "%"
+msgstr ""
+
+#: includes/post_views.php:35
+#@ color-theme-framework
+msgid "Views"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:284
+#: functions/trustme-1-column-vert-magazine-widget.php:284
+#: functions/trustme-2-columns-magazine-widget.php:294
+#: functions/trustme-2-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:299
+#: functions/trustme-3-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:729
+#: functions/trustme-popular-post-widget.php:185
+#: functions/trustme-recent-posts-widget.php:167
+#: functions/trustme-tabs-widget.php:202
+#@ color-theme-framework
+msgid "No comments"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:284
+#: functions/trustme-1-column-vert-magazine-widget.php:284
+#: functions/trustme-2-columns-magazine-widget.php:294
+#: functions/trustme-2-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:299
+#: functions/trustme-3-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:729
+#: functions/trustme-popular-post-widget.php:185
+#: functions/trustme-recent-posts-widget.php:167
+#: functions/trustme-tabs-widget.php:202
+#@ color-theme-framework
+msgid "1 comment"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:284
+#: functions/trustme-1-column-vert-magazine-widget.php:284
+#: functions/trustme-2-columns-magazine-widget.php:294
+#: functions/trustme-2-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:299
+#: functions/trustme-3-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:729
+#: functions/trustme-popular-post-widget.php:185
+#: functions/trustme-recent-posts-widget.php:167
+#: functions/trustme-tabs-widget.php:202
+#@ color-theme-framework
+msgid "% comments"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:284
+#: functions/trustme-1-column-vert-magazine-widget.php:284
+#: functions/trustme-2-columns-magazine-widget.php:294
+#: functions/trustme-2-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:299
+#: functions/trustme-3-columns-magazine-widget.php:514
+#: functions/trustme-3-columns-magazine-widget.php:729
+#: functions/trustme-popular-post-widget.php:185
+#: functions/trustme-recent-posts-widget.php:167
+#: functions/trustme-tabs-widget.php:202
+#@ color-theme-framework
+msgid "Comments are off"
+msgstr ""
+
+#: functions/trustme-popular-post-widget.php:235
+#@ color-theme-framework
+msgid "Most Popular"
+msgstr ""
+
+#: functions/trustme-popular-post-widget.php:273
+#@ color-theme-framework
+msgid "Order by:"
+msgstr ""
+
+#: functions/trustme-recent-posts-widget.php:41
+#@ color-theme-framework
+msgid "Display Recent Posts by Categories"
+msgstr ""
+
+#: functions/trustme-recent-posts-widget.php:257
+#@ color-theme-framework
+msgid "Show post category"
+msgstr ""
+
+#: functions/trustme-related-posts-widget.php:40
+#@ color-theme-framework
+msgid "A widget that show related posts"
+msgstr ""
+
+#: functions/trustme-related-posts-widget.php:90
+#@ color-theme-framework
+msgid "No related posts"
+msgstr ""
+
+#: functions/trustme-related-posts-widget.php:121
+#@ color-theme-framework
+msgid "Related Posts"
+msgstr ""
+
+#: functions/trustme-search-widget.php:41
+#@ color-theme-framework
+msgid "Search Widget"
+msgstr ""
+
+#: functions/trustme-search-widget.php:106
+#: searchform.php:11
+#: searchform.php:12
+#: searchform.php:13
+#@ color-theme-framework
+msgid "Search"
+msgstr ""
+
+#: functions/trustme-slider-widget.php:41
+#@ color-theme-framework
+msgid "Slider widget"
+msgstr ""
+
+#: functions/trustme-slider-widget.php:229
+#@ color-theme-framework
+msgid "Show carousel"
+msgstr ""
+
+#: functions/trustme-slider-widget.php:233
+#@ color-theme-framework
+msgid "Type of text to show (for carousel):"
+msgstr ""
+
+#: functions/trustme-slider-widget.php:243
+#@ color-theme-framework
+msgid "Animate slider automatically"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:41
+#@ color-theme-framework
+msgid "Social Counter Widget"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:227
+#@ color-theme-framework
+msgid "Twitter ID:"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:232
+#@ color-theme-framework
+msgid "Facebook ID:"
+msgstr ""
+
+#: functions/trustme-twitter-widget.php:35
+#@ color-theme-framework
+msgid "Twitter Widget"
+msgstr ""
+
+#: functions/trustme-twitter-widget.php:139
+#@ color-theme-framework
+msgid "Latest Tweets"
+msgstr ""
+
+#: functions/trustme-twitter-widget.php:153
+#@ color-theme-framework
+msgid "User Name:"
+msgstr ""
+
+#: functions/trustme-twitter-widget.php:159
+#@ color-theme-framework
+msgid "The Number of Displayed Messages:"
+msgstr ""
+
+#: functions.php:35
+#@ color-theme-framework
+msgid "main navigation"
+msgstr ""
+
+#: functions.php:36
+#@ color-theme-framework
+msgid "additional navigation"
+msgstr ""
+
+#: functions.php:630
+#@ color-theme-framework
+msgid "Error retrieving video information from the URL"
+msgstr ""
+
+#: functions.php:724
+#@ color-theme-framework
+msgid "Anonymous"
+msgstr ""
+
+#: functions.php:741
+#@ color-theme-framework
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/post_views.php:14
+#@ color-theme-framework
+msgid " views"
+msgstr ""
+
+#: template-archives.php:25
+#@ color-theme-framework
+msgid "Read more..."
+msgstr ""
+
+#: template-archives.php:26
+#@ color-theme-framework
+msgid "Pages:"
+msgstr ""
+
+#: template-archives.php:35
+#@ color-theme-framework
+msgid "Last 30 Posts"
+msgstr ""
+
+#: template-archives.php:46
+#@ color-theme-framework
+msgid "Archives by Month:"
+msgstr ""
+
+#: 404.php:27
+#: template-archives.php:54
+#@ color-theme-framework
+msgid "Archives by Subject:"
+msgstr ""
+
+#: template-contacts.php:54
+#@ color-theme-framework
+msgid "Message was sent to website administrator. Thank you!"
+msgstr ""
+
+#: template-contacts.php:80
+#@ color-theme-framework
+msgid "Your Name"
+msgstr ""
+
+#: template-contacts.php:83
+#@ color-theme-framework
+msgid "Your Email Address"
+msgstr ""
+
+#: template-contacts.php:86
+#@ color-theme-framework
+msgid "Your URL"
+msgstr ""
+
+#: template-contacts.php:89
+#@ color-theme-framework
+msgid "Subject"
+msgstr ""
+
+#: template-contacts.php:94
+#@ color-theme-framework
+msgid "Type your questions here..."
+msgstr ""
+
+#: template-contacts.php:95
+#@ color-theme-framework
+msgid "Send Message"
+msgstr ""
+
+#: 404.php:8
+#@ color-theme-framework
+msgid "404 Error &mdash; Not Found."
+msgstr ""
+
+#: 404.php:17
+#@ color-theme-framework
+msgid "Last 10 Posts"
+msgstr ""
+
+#: admin/functions/functions.options.php:154
+#@ color-theme-framework
+msgid "Number of Columns in Footer"
+msgstr ""
+
+#: admin/functions/functions.options.php:155
+#@ color-theme-framework
+msgid "Select number of footer columns"
+msgstr ""
+
+#: admin/functions/functions.options.php:230
+#@ color-theme-framework
+msgid "Color For The First Word in Title"
+msgstr ""
+
+#: admin/functions/functions.options.php:231
+#@ color-theme-framework
+msgid "Pick a color (default: #a73e3e)"
+msgstr ""
+
+#: admin/functions/functions.options.php:237
+#@ color-theme-framework
+msgid "Top Menu background & Footer background color"
+msgstr ""
+
+#: admin/functions/functions.options.php:238
+#: admin/functions/functions.options.php:280
+#@ color-theme-framework
+msgid "Pick a background color (default: #2D2D2D)."
+msgstr ""
+
+#: admin/functions/functions.options.php:243
+#@ color-theme-framework
+msgid "Use Background Image / BG Color / Upload Your Image (Body)"
+msgstr ""
+
+#: admin/functions/functions.options.php:244
+#@ color-theme-framework
+msgid "Select the type of usage background for Body"
+msgstr ""
+
+#: admin/functions/functions.options.php:272
+#@ color-theme-framework
+msgid "Use Background Image / BG Color / Upload Your Image for Top Block (Header)"
+msgstr ""
+
+#: admin/functions/functions.options.php:273
+#@ color-theme-framework
+msgid "Select the type of usage background for Header"
+msgstr ""
+
+#: admin/functions/functions.options.php:279
+#@ color-theme-framework
+msgid "Top Block Background Color"
+msgstr ""
+
+#: admin/functions/functions.options.php:285
+#@ color-theme-framework
+msgid "Image Upload For Top Block Background"
+msgstr ""
+
+#: admin/functions/functions.options.php:292
+#: admin/functions/functions.options.php:330
+#@ color-theme-framework
+msgid "Background Images for Top Block"
+msgstr ""
+
+#: admin/functions/functions.options.php:293
+#: admin/functions/functions.options.php:331
+#@ color-theme-framework
+msgid "Select a background pattern for Top Block."
+msgstr ""
+
+#: admin/functions/functions.options.php:307
+#@ color-theme-framework
+msgid "Widget Title Options"
+msgstr ""
+
+#: admin/functions/functions.options.php:310
+#@ color-theme-framework
+msgid "Use Background Image / BG Color / Upload Your Image for Widget Titles"
+msgstr ""
+
+#: admin/functions/functions.options.php:311
+#@ color-theme-framework
+msgid "Select the type of usage background for Widget Titles"
+msgstr ""
+
+#: admin/functions/functions.options.php:317
+#@ color-theme-framework
+msgid "Widget Title Background Color"
+msgstr ""
+
+#: admin/functions/functions.options.php:318
+#@ color-theme-framework
+msgid "Pick a background color (default: #FFFFFF)."
+msgstr ""
+
+#: admin/functions/functions.options.php:323
+#@ color-theme-framework
+msgid "Image Upload For Widget Title"
+msgstr ""
+
+#: admin/functions/functions.options.php:345
+#@ color-theme-framework
+msgid "Blog and Pages Options"
+msgstr ""
+
+#: admin/functions/functions.options.php:348
+#@ color-theme-framework
+msgid "Select a Blog type"
+msgstr ""
+
+#: admin/functions/functions.options.php:349
+#@ color-theme-framework
+msgid "You can choose from three types of blog"
+msgstr ""
+
+#: admin/functions/functions.options.php:378
+#@ color-theme-framework
+msgid "Select a layout for Category/Search/Tag/Author/Archive templates"
+msgstr ""
+
+#: admin/functions/functions.options.php:389
+#@ color-theme-framework
+msgid "Select a type for Category/Search/Tag/Author/Archive and other templates"
+msgstr ""
+
+#: admin/functions/functions.options.php:390
+#@ color-theme-framework
+msgid "You can choose type for category/search/tag/author/archive pages "
+msgstr ""
+
+#: admin/functions/functions.options.php:397
+#@ color-theme-framework
+msgid "Position for Single Post Navigation"
+msgstr ""
+
+#: admin/functions/functions.options.php:398
+#@ color-theme-framework
+msgid "Select your position"
+msgstr ""
+
+#: admin/functions/functions.options.php:466
+#@ color-theme-framework
+msgid "Show banner: "
+msgstr ""
+
+#: admin/functions/functions.options.php:467
+#@ color-theme-framework
+msgid "Show or hide banner"
+msgstr ""
+
+#: admin/functions/functions.options.php:500
+#@ color-theme-framework
+msgid "Social Services Settings"
+msgstr ""
+
+#: admin/functions/functions.options.php:504
+#@ color-theme-framework
+msgid "Enter url for facebook in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:510
+#@ color-theme-framework
+msgid "Enter url for twitter in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:515
+#@ color-theme-framework
+msgid "Skype"
+msgstr ""
+
+#: admin/functions/functions.options.php:516
+#@ color-theme-framework
+msgid "Enter url for skype in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:522
+#@ color-theme-framework
+msgid "Enter url for google in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:527
+#: social-icons.php:23
+#@ color-theme-framework
+msgid "Subscribe via RSS"
+msgstr ""
+
+#: admin/functions/functions.options.php:528
+#@ color-theme-framework
+msgid "Enter url for RSS in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:533
+#: social-icons.php:27
+#@ color-theme-framework
+msgid "Subscribe via Email"
+msgstr ""
+
+#: admin/functions/functions.options.php:534
+#@ color-theme-framework
+msgid "Enter url for email subscribe in top section"
+msgstr ""
+
+#: admin/functions/functions.options.php:550
+#@ color-theme-framework
+msgid "Google Maps for Contacts Page Template"
+msgstr ""
+
+#: admin/functions/functions.options.php:551
+#@ color-theme-framework
+msgid "Paste Google Maps Code"
+msgstr ""
+
+#: admin/functions/functions.options.php:556
+#@ color-theme-framework
+msgid "Copyrights for Footer"
+msgstr ""
+
+#: admin/functions/functions.options.php:563
+#@ color-theme-framework
+msgid "Additional info for Footer"
+msgstr ""
+
+#: content-archive.php:41
+#@ color-theme-framework
+msgid "Archives"
+msgstr ""
+
+#: content-archive.php:82
+#: content-archive.php:276
+#: content-author.php:83
+#: content-author.php:277
+#: content-blog.php:92
+#: content-blog.php:274
+#: content-category.php:76
+#: content-category.php:270
+#: content-search.php:79
+#: content-search.php:273
+#: content-single.php:105
+#: content-tag.php:75
+#: content-tag.php:269
+#: functions/trustme-1-column-horiz-magazine-widget.php:116
+#: functions/trustme-1-column-vert-magazine-widget.php:113
+#: functions/trustme-2-columns-magazine-widget.php:119
+#: functions/trustme-2-columns-magazine-widget.php:353
+#: functions/trustme-3-columns-magazine-widget.php:128
+#: functions/trustme-3-columns-magazine-widget.php:358
+#: functions/trustme-3-columns-magazine-widget.php:573
+#: functions/trustme-blog-widget.php:134
+#: functions/trustme-blog-widget.php:319
+#@ color-theme-framework
+msgid "Post format: Standard"
+msgstr ""
+
+#: content-archive.php:87
+#: content-archive.php:281
+#: content-author.php:88
+#: content-author.php:282
+#: content-blog.php:97
+#: content-blog.php:279
+#: content-category.php:81
+#: content-category.php:275
+#: content-search.php:84
+#: content-search.php:278
+#: content-single.php:110
+#: content-tag.php:80
+#: content-tag.php:274
+#: functions/trustme-1-column-horiz-magazine-widget.php:121
+#: functions/trustme-1-column-vert-magazine-widget.php:116
+#: functions/trustme-2-columns-magazine-widget.php:122
+#: functions/trustme-2-columns-magazine-widget.php:356
+#: functions/trustme-3-columns-magazine-widget.php:131
+#: functions/trustme-3-columns-magazine-widget.php:361
+#: functions/trustme-3-columns-magazine-widget.php:576
+#: functions/trustme-blog-widget.php:139
+#: functions/trustme-blog-widget.php:324
+#@ color-theme-framework
+msgid "Post format: Image"
+msgstr ""
+
+#: content-author.php:37
+#, php-format
+#@ color-theme-framework
+msgid "Author Archives: %s"
+msgstr ""
+
+#: content-category.php:33
+#, php-format
+#@ color-theme-framework
+msgid "Category Archives: %s"
+msgstr ""
+
+#: content-search.php:33
+#@ color-theme-framework
+msgid "Results for"
+msgstr ""
+
+#: content-search.php:41
+#@ color-theme-framework
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: content-single.php:61
+#@ color-theme-framework
+msgid "posted by "
+msgstr ""
+
+#: content-single.php:318
+#@ color-theme-framework
+msgid "Facebook Comments"
+msgstr ""
+
+#: content-tag.php:33
+#, php-format
+#@ color-theme-framework
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:46
+#@ color-theme-framework
+msgid "CT: 1 Column Horizontal Magazine Widget"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:372
+#: functions/trustme-1-column-vert-magazine-widget.php:366
+#: functions/trustme-2-columns-magazine-widget.php:617
+#: functions/trustme-2-columns-magazine-widget.php:667
+#: functions/trustme-3-columns-magazine-widget.php:840
+#: functions/trustme-3-columns-magazine-widget.php:890
+#: functions/trustme-3-columns-magazine-widget.php:939
+#: functions/trustme-popular-post-widget.php:267
+#: functions/trustme-recent-posts-widget.php:262
+#@ color-theme-framework
+msgid "Show comments for posts"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:377
+#: functions/trustme-1-column-vert-magazine-widget.php:371
+#: functions/trustme-2-columns-magazine-widget.php:612
+#: functions/trustme-2-columns-magazine-widget.php:662
+#: functions/trustme-3-columns-magazine-widget.php:835
+#: functions/trustme-3-columns-magazine-widget.php:885
+#: functions/trustme-3-columns-magazine-widget.php:934
+#: functions/trustme-popular-post-widget.php:257
+#: functions/trustme-recent-posts-widget.php:267
+#@ color-theme-framework
+msgid "Show date for posts"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:382
+#: functions/trustme-1-column-vert-magazine-widget.php:376
+#: functions/trustme-2-columns-magazine-widget.php:607
+#: functions/trustme-2-columns-magazine-widget.php:658
+#: functions/trustme-3-columns-magazine-widget.php:830
+#: functions/trustme-3-columns-magazine-widget.php:881
+#: functions/trustme-3-columns-magazine-widget.php:930
+#: functions/trustme-popular-post-widget.php:262
+#@ color-theme-framework
+msgid "Show category for posts"
+msgstr ""
+
+#: functions/trustme-1-column-horiz-magazine-widget.php:393
+#: functions/trustme-1-column-vert-magazine-widget.php:387
+#: functions/trustme-2-columns-magazine-widget.php:622
+#: functions/trustme-2-columns-magazine-widget.php:672
+#: functions/trustme-3-columns-magazine-widget.php:845
+#: functions/trustme-3-columns-magazine-widget.php:895
+#: functions/trustme-3-columns-magazine-widget.php:944
+#@ color-theme-framework
+msgid "Show excerpt for first post"
+msgstr ""
+
+#: functions/trustme-1-column-vert-magazine-widget.php:40
+#@ color-theme-framework
+msgid "1 Column Vertical Magazine Widget (show recent posts)."
+msgstr ""
+
+#: functions/trustme-1-column-vert-magazine-widget.php:46
+#@ color-theme-framework
+msgid "CT: 1 Column Vertical Magazine Widget"
+msgstr ""
+
+#: functions/trustme-2-columns-magazine-widget.php:46
+#@ color-theme-framework
+msgid "CT: 2 Columns Magazine Widget"
+msgstr ""
+
+#: functions/trustme-3-columns-magazine-widget.php:40
+#@ color-theme-framework
+msgid "3 Columns Vertical Magazine Widget (show recent posts)."
+msgstr ""
+
+#: functions/trustme-3-columns-magazine-widget.php:46
+#@ color-theme-framework
+msgid "CT: 3 Columns Magazine Widget"
+msgstr ""
+
+#: functions/trustme-3-columns-magazine-widget.php:901
+#@ color-theme-framework
+msgid "Third Column"
+msgstr ""
+
+#: functions/trustme-3-columns-magazine-widget.php:904
+#@ color-theme-framework
+msgid "Title (3rd column):"
+msgstr ""
+
+#: functions/trustme-3-columns-magazine-widget.php:909
+#@ color-theme-framework
+msgid "Filter by Category (3rd column):"
+msgstr ""
+
+#: functions/trustme-3-columns-magazine-widget.php:920
+#@ color-theme-framework
+msgid "Number of posts (3rd column):"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:41
+#@ color-theme-framework
+msgid "4 Ads 125x125 for sidebar widget"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:47
+#@ color-theme-framework
+msgid "CT: 4 Ads 125x125"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:127
+#@ color-theme-framework
+msgid "ADS125x125"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:137
+#: functions/trustme-ads300x250-widget.php:119
+#: functions/trustme-ads728x90-widget.php:101
+#@ color-theme-framework
+msgid "Link Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:142
+#: functions/trustme-ads300x250-widget.php:124
+#: functions/trustme-ads728x90-widget.php:106
+#@ color-theme-framework
+msgid "Image Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:147
+#@ color-theme-framework
+msgid "Link2 Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:152
+#@ color-theme-framework
+msgid "Image2 Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:157
+#@ color-theme-framework
+msgid "Link3 Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:162
+#@ color-theme-framework
+msgid "Image3 Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:167
+#@ color-theme-framework
+msgid "Link4 Url:"
+msgstr ""
+
+#: functions/trustme-4ads125x125-widget.php:172
+#@ color-theme-framework
+msgid "Image4 Url:"
+msgstr ""
+
+#: functions/trustme-ads300x250-widget.php:41
+#@ color-theme-framework
+msgid "Ads 300x250 for sidebar widget"
+msgstr ""
+
+#: functions/trustme-ads300x250-widget.php:47
+#@ color-theme-framework
+msgid "CT: Ads 300x250"
+msgstr ""
+
+#: functions/trustme-ads300x250-widget.php:108
+#@ color-theme-framework
+msgid "ADS300"
+msgstr ""
+
+#: functions/trustme-ads728x90-widget.php:41
+#@ color-theme-framework
+msgid "Ads for Magazine Widget"
+msgstr ""
+
+#: functions/trustme-ads728x90-widget.php:47
+#@ color-theme-framework
+msgid "CT: Ads 728x90"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:47
+#@ color-theme-framework
+msgid "CT: Blog Widget"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:432
+#@ color-theme-framework
+msgid "From Blog"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:442
+#@ color-theme-framework
+msgid "Select type of the Blog:"
+msgstr ""
+
+#: functions/trustme-blog-widget.php:452
+#@ color-theme-framework
+msgid "Show media in posts"
+msgstr ""
+
+#: functions/trustme-categories-widget.php:41
+#@ color-theme-framework
+msgid "Categories Widget"
+msgstr ""
+
+#: functions/trustme-categories-widget.php:47
+#@ color-theme-framework
+msgid "CT: Categories Widget"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:42
+#@ color-theme-framework
+msgid "FB Like Box Widget"
+msgstr ""
+
+#: functions/trustme-fblikebox-widget.php:48
+#@ color-theme-framework
+msgid "CT: FB Like Box"
+msgstr ""
+
+#: functions/trustme-fbsubscribe-widget.php:48
+#@ color-theme-framework
+msgid "CT: FB Subscribe"
+msgstr ""
+
+#: functions/trustme-flickr-widget.php:41
+#@ color-theme-framework
+msgid "Flickr Widget"
+msgstr ""
+
+#: functions/trustme-news-ticker-widget.php:46
+#@ color-theme-framework
+msgid "CT: News Ticker"
+msgstr ""
+
+#: functions/trustme-popular-post-widget.php:46
+#@ color-theme-framework
+msgid "CT: Popular Posts"
+msgstr ""
+
+#: functions/trustme-recent-posts-thumbs-widget.php:41
+#@ color-theme-framework
+msgid "Recent Posts Thumbs Magazine Widget (show recent posts as thumbs)."
+msgstr ""
+
+#: functions/trustme-recent-posts-thumbs-widget.php:47
+#@ color-theme-framework
+msgid "CT: Recent Posts Thumbs"
+msgstr ""
+
+#: functions/trustme-recent-posts-thumbs-widget.php:144
+#@ color-theme-framework
+msgid "Recent Posts Thumbs"
+msgstr ""
+
+#: functions/trustme-recent-posts-widget.php:47
+#@ color-theme-framework
+msgid "CT: Recent Posts"
+msgstr ""
+
+#: functions/trustme-related-posts-widget.php:46
+#@ color-theme-framework
+msgid "CT: Related Posts"
+msgstr ""
+
+#: functions/trustme-search-widget.php:47
+#@ color-theme-framework
+msgid "CT: Search"
+msgstr ""
+
+#: functions/trustme-sharethis-widget.php:42
+#@ color-theme-framework
+msgid "Share This Widget For Single Post"
+msgstr ""
+
+#: functions/trustme-sharethis-widget.php:48
+#@ color-theme-framework
+msgid "CT: Share This"
+msgstr ""
+
+#: functions/trustme-sharethis-widget.php:101
+#@ color-theme-framework
+msgid "Share This Article"
+msgstr ""
+
+#: functions/trustme-sharethis-widget.php:122
+#@ color-theme-framework
+msgid "Paste Your Code From https://www.addthis.com:"
+msgstr ""
+
+#: functions/trustme-slider-widget.php:47
+#@ color-theme-framework
+msgid "CT: Slider Widget"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:47
+#@ color-theme-framework
+msgid "CT: Social Counter"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:137
+#@ color-theme-framework
+msgid "Facebook Fans"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:138
+#@ color-theme-framework
+msgid "Fans"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:144
+#@ color-theme-framework
+msgid "Twitter Followers"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:145
+#@ color-theme-framework
+msgid "Followers"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:151
+#@ color-theme-framework
+msgid "Youtube Subscribers"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:152
+#@ color-theme-framework
+msgid "Subscribers"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:158
+#@ color-theme-framework
+msgid "RSS Feedburners"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:159
+#: functions/trustme-social-counter-widget.php:264
+#@ color-theme-framework
+msgid "FeedBurner"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:237
+#@ color-theme-framework
+msgid "YouTube ID:"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:242
+#@ color-theme-framework
+msgid "FeedBurner ID:"
+msgstr ""
+
+#: functions/trustme-social-counter-widget.php:247
+#@ color-theme-framework
+msgid "Show counters:"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:46
+#@ color-theme-framework
+msgid "CT: Tabbed Widget"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:299
+#@ color-theme-framework
+msgid "Recent Comments"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:318
+#@ color-theme-framework
+msgid "Title1:"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:323
+#@ color-theme-framework
+msgid "Title2:"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:339
+#@ color-theme-framework
+msgid "Post meta info"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:345
+#@ color-theme-framework
+msgid "Show comments"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:355
+#@ color-theme-framework
+msgid "Show category"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:372
+#@ color-theme-framework
+msgid "Recent Comment Settings"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:377
+#@ color-theme-framework
+msgid "Show avatar"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:381
+#@ color-theme-framework
+msgid "Number of comments:"
+msgstr ""
+
+#: functions/trustme-tabs-widget.php:386
+#@ color-theme-framework
+msgid "Comments lenght:"
+msgstr ""
+
+#: functions/trustme-twitter-widget.php:41
+#@ color-theme-framework
+msgid "CT: Twitter Widget"
+msgstr ""
+
+#: functions.php:59
+#@ color-theme-framework
+msgid "Magazine Top Widgets"
+msgstr ""
+
+#: functions.php:69
+#@ color-theme-framework
+msgid "Magazine Center Widgets"
+msgstr ""
+
+#: functions.php:80
+#@ color-theme-framework
+msgid "Magazine Sidebar"
+msgstr ""
+
+#: functions.php:91
+#@ color-theme-framework
+msgid "Single Top Widgets"
+msgstr ""
+
+#: functions.php:101
+#@ color-theme-framework
+msgid "Single Before Widgets"
+msgstr ""
+
+#: functions.php:111
+#@ color-theme-framework
+msgid "Single After Content Widgets"
+msgstr ""
+
+#: functions.php:121
+#@ color-theme-framework
+msgid "Single After Widgets"
+msgstr ""
+
+#: functions.php:132
+#@ color-theme-framework
+msgid "Single Sidebar"
+msgstr ""
+
+#: functions.php:144
+#@ color-theme-framework
+msgid "Category Top Widgets"
+msgstr ""
+
+#: functions.php:154
+#@ color-theme-framework
+msgid "Category Before Widgets"
+msgstr ""
+
+#: functions.php:164
+#@ color-theme-framework
+msgid "Category After Widgets"
+msgstr ""
+
+#: functions.php:174
+#@ color-theme-framework
+msgid "Category Sidebar"
+msgstr ""
+
+#: functions.php:186
+#@ color-theme-framework
+msgid "Blog Top Widgets"
+msgstr ""
+
+#: functions.php:196
+#@ color-theme-framework
+msgid "Blog Before Widgets"
+msgstr ""
+
+#: functions.php:206
+#@ color-theme-framework
+msgid "Blog After Widgets"
+msgstr ""
+
+#: functions.php:216
+#@ color-theme-framework
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:249
+#@ color-theme-framework
+msgid "Footer"
+msgstr ""
+
+#: functions.php:259
+#@ color-theme-framework
+msgid "Sidebar Widgets"
+msgstr ""
+
+#: functions.php:279
+#@ color-theme-framework
+msgid "Thumbnail"
+msgstr ""
+
+#: functions.php:301
+#@ color-theme-framework
+msgid "None"
+msgstr ""
+
+#: functions.php:866
+#: rating-system.php:50
+#@ color-theme-framework
+msgid "Review Post"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:33
+#@ color-theme-framework
+msgid "Rebuild all Thumbnails"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:33
+#@ color-theme-framework
+msgid "Rebuild Thumbnails"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:52
+#@ color-theme-framework
+msgid "Reading attachments..."
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:73
+#@ color-theme-framework
+msgid "No attachments found."
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:81
+#@ color-theme-framework
+msgid "Done."
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:84
+#, php-format
+#@ ajax-thumbnail-rebuild
+msgid "\"Rebuilding \" + %s + \" of \" + %s + \" (\" + %s + \")...\""
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:103
+#@ color-theme-framework
+msgid "Error"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:120
+#@ color-theme-framework
+msgid "Select which thumbnails you want to rebuild"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:121
+#@ color-theme-framework
+msgid "Toggle all"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:131
+#@ color-theme-framework
+msgid "cropped"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:138
+#@ color-theme-framework
+msgid "Only rebuild featured images"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:141
+#@ color-theme-framework
+msgid "Note: If you've changed the dimensions of your thumbnails, existing thumbnail images will not be deleted."
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:145
+#@ color-theme-framework
+msgid "Rebuild All Thumbnails"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:149
+#@ color-theme-framework
+msgid "Last image"
+msgstr ""
+
+#: includes/ajax-thumbnail-rebuild.php:152
+#, php-format
+#@ color-theme-framework
+msgid "If you find this plugin useful, I'd be happy to read your comments on the %splugin homepage%s. If you experience any problems, feel free to leave a comment too."
+msgstr ""
+
+#: includes/post_views.php:183
+#@ color-theme-framework
+msgid "Video Post Format"
+msgstr ""
+
+#: includes/post_views.php:184
+#@ color-theme-framework
+msgid "Add video ID from Vimeo or Youtube. Examples: vimeo - 29017795 / youtube - WhBoR_tgXCI"
+msgstr ""
+
+#: includes/post_views.php:191
+#@ color-theme-framework
+msgid "Video Type"
+msgstr ""
+
+#: includes/post_views.php:199
+#@ color-theme-framework
+msgid "Video ID"
+msgstr ""
+
+#: includes/post_views.php:206
+#@ color-theme-framework
+msgid "Type of Video Thumb ( Auto generated from video service or use featured image ) "
+msgstr ""
+
+#: includes/post_views.php:215
+#@ color-theme-framework
+msgid "Audio Post Format"
+msgstr ""
+
+#: includes/post_views.php:216
+#@ color-theme-framework
+msgid "Paste embed code from Sound Cloud service"
+msgstr ""
+
+#: includes/post_views.php:221
+#@ color-theme-framework
+msgid "Sound Cloud"
+msgstr ""
+
+#: includes/sidebar_generator.php:175
+#: includes/sidebar_generator.php:197
+#: includes/sidebar_generator.php:272
+#@ color-theme-framework
+msgid "Custom Sidebars"
+msgstr ""
+
+#: includes/sidebar_generator.php:228
+#@ color-theme-framework
+msgid "No Sidebars defined"
+msgstr ""
+
+#: includes/sidebar_generator.php:278
+#@ color-theme-framework
+msgid "Select the custom sidebar, leave unselected to use the default sidebar"
+msgstr ""
+
+#: meta-box/inc/classes/meta-box.php:284
+#@ rwmb
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: meta-box/inc/classes/meta-box.php:342
+#@ rwmb
+msgid "+"
+msgstr ""
+
+#: meta-box/inc/classes/meta-box.php:364
+#@ rwmb
+msgid "&#8211;"
+msgstr ""
+
+#: meta-box/inc/fields/file.php:65
+#: meta-box/inc/fields/file_single.php:64
+#@ rwmb
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: meta-box/inc/fields/file.php:79
+#: meta-box/inc/fields/file_single.php:78
+#@ rwmb
+msgctxt "file upload"
+msgid "Delete"
+msgstr ""
+
+#: meta-box/inc/fields/file.php:80
+#@ rwmb
+msgctxt "file upload"
+msgid "Upload files"
+msgstr ""
+
+#: meta-box/inc/fields/file.php:81
+#@ rwmb
+msgctxt "file upload"
+msgid "+ Add new file"
+msgstr ""
+
+#: meta-box/inc/fields/image.php:64
+#@ rwmb
+msgid "Order saved"
+msgstr ""
+
+#: meta-box/inc/fields/image.php:78
+#: meta-box/inc/fields/thickbox-image.php:35
+#@ rwmb
+msgctxt "image upload"
+msgid "Upload images"
+msgstr ""
+
+#: meta-box/inc/fields/image.php:79
+#@ rwmb
+msgctxt "image upload"
+msgid "+ Add new image"
+msgstr ""
+
+#: meta-box/inc/fields/image.php:136
+#@ rwmb
+msgctxt "image upload"
+msgid "Delete"
+msgstr ""
+
+#: meta-box/inc/fields/image.php:137
+#@ rwmb
+msgctxt "image upload"
+msgid "Edit"
+msgstr ""
+
+#: meta-box/inc/fields/map.php:46
+#@ rwmb
+msgid "Find Address"
+msgstr ""
+
+#: meta-box/inc/fields/plupload-image.php:87
+#@ rwmb
+msgctxt "image upload"
+msgid "Allowed Image Files"
+msgstr ""
+
+#: meta-box/inc/fields/plupload-image.php:111
+#@ rwmb
+msgctxt "image upload"
+msgid "Drop images here"
+msgstr ""
+
+#: meta-box/inc/fields/plupload-image.php:112
+#@ rwmb
+msgctxt "image upload"
+msgid "or"
+msgstr ""
+
+#: meta-box/inc/fields/plupload-image.php:113
+#@ rwmb
+msgctxt "image upload"
+msgid "Select Files"
+msgstr ""
+
+#: meta-box/inc/fields/select-advanced.php:81
+#@ rwmb
+msgid "Select a value"
+msgstr ""
+
+#: single-navigation.php:15
+#@ color-theme-framework
+msgid "Go to the Previous Post"
+msgstr ""
+
+#: single-navigation.php:21
+#@ color-theme-framework
+msgid "Go to the Next Post"
+msgstr ""
+
+#: social-icons.php:7
+#@ color-theme-framework
+msgid "Go to Facebook"
+msgstr ""
+
+#: social-icons.php:11
+#@ color-theme-framework
+msgid "Go to Twitter"
+msgstr ""
+
+#: social-icons.php:15
+#@ color-theme-framework
+msgid "Go to Skype"
+msgstr ""
+
+#: social-icons.php:19
+#@ color-theme-framework
+msgid "Go to Google"
+msgstr ""
+
+#: template-sitemap.php:24
+#@ color-theme-framework
+msgid "Posts"
+msgstr ""
+
+#: template-sitemap.php:61
+#@ color-theme-framework
+msgid "Pages"
+msgstr ""
+
+#: widget-audio.php:26
+#@ color-theme-framework
+msgid "Post format: Audio"
+msgstr ""
+
+#: widget-gallery.php:75
+#@ color-theme-framework
+msgid "Post format: Gallery"
+msgstr ""
+
+#: widget-video.php:94
+#@ color-theme-framework
+msgid "Post format: Video"
+msgstr ""
+

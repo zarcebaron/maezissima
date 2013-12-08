@@ -1,0 +1,27 @@
+﻿#post-body .rwmb-select {
+ -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FAFAFA;
+    border-image: url('') none;
+    color: #586970;
+    font-family: sans-serif;
+    font-size: 11px;
+    height: 26px;
+    margin-bottom: 10px !important;
+    padding: 2px 5px;
+    width: 260px;
+	border-left-style: solid;
+	border-left-color: #E2EAED !important;
+	border-left-width: 3px;
+	border-right-style: solid;
+	border-right-color: #E2EAED !important;
+	border-right-width: 3px;
+	border-top-style: solid;
+	border-top-color: #E2EAED !important;
+	border-top-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #E2EAED !important;
+	border-bottom-width: 3px;
+}
