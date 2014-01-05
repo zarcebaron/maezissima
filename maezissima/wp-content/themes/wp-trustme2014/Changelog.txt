@@ -1,0 +1,153 @@
+-----------------------------------------------------------------------
+TrustMe - Responsive Wordpress Magazine / Blog Theme v 1.05 — Changelog
+-----------------------------------------------------------------------
+
+
+Version 1.05 2013-06-22
+--------------------------
+- Fixed: Bug with Slider post excerpt.
+- Added: A new tab in the "Theme Options" for the Twitter.
+- Fixed: Issue with Twitter widget.
+- Fixed: Issue with Twitter followers counter.
+- Fixed: Minor bugs.
+
+Changed files:
+- style.css
+- functions.php
+- header.php
+- contact.php
+- rtl.css
+- \functions\trustme-social-counter-widget.php
+- \functions\trustme-social-counter-widget.php
+- \functions\trustme-slider-widget.php
+- \functions\trustme-blog-widget.php
+- \functions\trustme-recent-posts-widget.php
+- \admin\functions\functions.options.php
+- \admin\assets\css\admin-style.css
+
+New files:
+- \functions\twitteroauth.php
+- \functions\TwitterAPIExchange.php
+- \admin\assets\images\icon-twitter.png
+
+
+
+
+
+Version 1.04 2013-03-01
+--------------------------
+- Improved: Microdata for posts and reviews.
+- Fixed: Issue with threaded comments on mobile phones.
+- Fixed: Bug with Review.
+- Fixed: Minor bugs.
+
+Changed files:
+- content-single.php
+- style.css
+- functions.php
+- \functions\trustme-author-profile-widget.php
+
+
+
+
+
+
+Version 1.03 2013-02-21
+--------------------------
+- Fixed: Bug with Text logo.
+- Changed: Sequence for layout "Left sidebar + Right content" for mobile devices (content always first).
+- Fixed: Minor bugs.
+
+Changed files:
+- style.css
+- header.php
+- template-blog.php
+- category.php
+- search.php
+- tag.php
+- author.php
+- archive.php
+- single.php
+- index.php
+
+
+
+
+
+
+Version 1.02 2013-02-15
+--------------------------
+- Fixed: Bug with Social Counter widget.
+- Fixed: Bug with Colored title with non-latin chars.
+- Fixed: Bug with PrettyPhoto (Facebook button).
+- Fixed: Minor bugs.
+- Changed: Font size for category description (on category page).
+- Improved: Interner Explorer compatibility.
+- Improved: Child themes compatibility.
+- Improved: Gallery in the single post.
+
+Changed files:
+- functions.php
+- style.css
+- archive.php
+- author.php
+- tag.php
+- search.php
+- category.php
+- header.php
+- content-category.php
+- widget-gallery.php
+- content-single.php
+- \css\prettyphoto.css
+- \admin\functions\functions.options.php
+- \includes\ajax-thumbnail-rebuild.php
+- \includes\sidebar_generator.php
+- \js\custom.js
+- \functions\trustme-tabs-widget.php
+- \functions\trustme-4ads125x125-widget.php
+- \functions\trustme-ads300x250-widget.php
+- \functions\trustme-ads728x90-widget.php
+- \functions\trustme-slider-widget.php
+- \functions\trustme-social-counter-widget.php
+- \functions\
+
+
+
+
+Version 1.01 2013-01-26
+--------------------------
+- Changed: Image size for Slider and Post thumbnail.
+- Fixed: Bug with line height for Slider title.
+- Fixed: Bug with standard RSS widget.
+- Fixed: Bug with Admin bar.
+- Fixed: Bug with Ads 740x90 Widget.
+- Fixed: Bug with 3 Columns Magazine Widget.
+- Fixed: Pagination for post comments.
+- Improved: Added H1 tag for logo on Home page.
+
+Changed files:
+- style.css
+- functions.php
+- header.php
+- page.php
+- comments.php
+- \js\custom.js
+- \functions\trustme-ads728x90-widget.php
+- \functions\trustme-3-columns-magazine-widget.php
+
+New files:
+- trustme-author-profile-widget.php
+
+
+
+
+Version 1.0 2013-01-12
+--------------------------
+- Release
+
+
+
+
+ZERGE <zerge.com@gmail.com>
+http://color-theme.com/
+http://themeforest.net/user/ZERGE

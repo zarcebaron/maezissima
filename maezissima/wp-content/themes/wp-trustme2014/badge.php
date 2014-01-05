@@ -1,0 +1,1 @@
+<a href="#" target="_self" id="badge"></a>
