@@ -24,7 +24,7 @@ add_action( 'wp_head', 'add_ajax_library' );
  */
 function bsf_initialize_bsf_meta_boxes() {
 	if ( ! class_exists( 'bsf_Meta_Box' ) )
-		require_once 'init.php';
+		require_once plugin_dir_path( __FILE__ ).'init.php';
 }
 //Function to display the rich snippet output below the content
 function display_rich_snippet($content) {
@@ -366,7 +366,7 @@ function display_rich_snippet($content) {
 		}
 		$product .= '<div class="snippet-data-img">';
 		$product .= '<span itemprop="rating">'.average_rating().'</span>';						
-		$product .= ' based on <span class="rating-count" itemprop="count">'.rating_count().'</span> reviews </span></div><div class="snippet-clear"></div>';
+		$product .= ' based on <span class="rating-count" itemprop="votes">'.rating_count().'</span> votes </span></div><div class="snippet-clear"></div>';
 		if(trim($product_brand) != "")
 		{
 			if($args_product['product_brand'] != "")
@@ -443,7 +443,7 @@ function display_rich_snippet($content) {
 				
 			$recipe .= '<div class="snippet-data-img"><span itemprop="name">'.$recipes_name.'</span></div><div class="snippet-clear"></div>';
 		}
-		$recipe .= '<div class="snippet-label-img">Published on : </div><div class="snippet-data-img"><time datetime="'.get_the_date('Y-m-d').'" itemprop="published">'.get_the_date('Y-m-d').'</time></div><div class="snippet-clear"></div>';
+		$recipe .= '<div class="snippet-label-img">'.$args_recipe['recipe_pub'].' </div><div class="snippet-data-img"><time datetime="'.get_the_date('Y-m-d').'" itemprop="published">'.get_the_date('Y-m-d').'</time></div><div class="snippet-clear"></div>';
 		if(trim($recipes_preptime) != "")
 		{
 			if($args_recipe['recipe_prep'] != "")
@@ -629,9 +629,9 @@ function display_rich_snippet($content) {
 			$article .= '<div id="snippet-box" style="background:'.$args_color["snippet_box_bg"].'; color:'.$args_color["snippet_box_color"].'; border:1px solid '.$args_color["snippet_border"].';">';
 			if($args_article['snippet_title'] != "" )
 			{
-			$article .= '<div class="snippet-title" style="background:'.$args_color["snippet_title_bg"].'; color:'.$args_color["snippet_title_color"].'; border-bottom:1px solid '.$args_color["snippet_border"].';">'.$args_article['snippet_title'];
+				$article .= '<div class="snippet-title" style="background:'.$args_color["snippet_title_bg"].'; color:'.$args_color["snippet_title_color"].'; border-bottom:1px solid '.$args_color["snippet_border"].';">'.$args_article['snippet_title'];
+				$article .= '</div>';
 			}
-			$article .= '</div>';
 			$article .= '<div itemscope itemtype="http://schema.org/Article">';
 			if(trim($article_image) != "")
 			{
@@ -678,7 +678,7 @@ function display_rich_snippet($content) {
 }
 //Filter the content and return with rich snippet output
 add_filter('the_content','display_rich_snippet');
-require_once('meta-boxes.php');
+require_once(plugin_dir_path( __FILE__ ).'meta-boxes.php');
 function enque() {
 	wp_enqueue_style('rating_style', plugin_dir_url(__FILE__) . 'css/jquery.rating.css');
 	wp_enqueue_script('jquery');
@@ -767,7 +767,7 @@ function bsf_do_rating()
 function get_previous_rating($needle, $haystack, $strict = false) {
     foreach ($haystack as $item) {
         if (($strict ? $item === $needle : $item == $needle) || (is_array($item) && get_previous_rating($needle, $item, $strict))) {
-            return $item['user_rating'];
+            return @$item['user_rating'];
         }
     }
     return false;

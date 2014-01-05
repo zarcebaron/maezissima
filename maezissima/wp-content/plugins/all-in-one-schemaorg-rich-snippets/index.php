@@ -5,7 +5,7 @@ Plugin URI: http://www.brainstormforce.com
 Author: Brainstorm Force
 Author URI: http://www.brainstormforce.com
 Description: The All in One Rich Snippets gives the power to the blog author to control the rich snippets to be shown in the search results by the search engines.
-Version: 1.1.1
+Version: 1.1.5
 Text Domain: rich-snippets
 License: GPL2
 */
@@ -56,7 +56,7 @@ if ( !class_exists( "RichSnippets" ) )
 		}
 		function register_custom_menu_page() 
 		{
-			require_once('admin/index.php');
+			require_once(plugin_dir_path( __FILE__ ).'admin/index.php');
 			$page = add_menu_page('All in One Rich Snippets Dashboard', 'Rich Snippets', 'administrator', 'rich_snippet_dashboard', 'rich_snippet_dashboard', 'div');
 			//Call the function to print the stylesheets and javascripts in only this plugins admin area
 			add_action( 'admin_print_styles-' . $page, 'bsf_admin_styles' ); 
@@ -136,7 +136,7 @@ if ( !class_exists( "RichSnippets" ) )
 			load_plugin_textdomain('rich-snippets', false, basename( dirname( __FILE__ ) ) . '/lang/' );
 		}
 		function register_bsf_settings() {
-			require_once('settings.php');
+			require_once(plugin_dir_path( __FILE__ ).'settings.php');
 			add_review_option();
 			add_event_option();
 			add_person_option();
@@ -209,7 +209,6 @@ if ( !class_exists( "RichSnippets" ) )
 		
 			die();
 		}
-		
 		function submit_color()
 		{
 			$snippet_box_bg = $_POST['snippet_box_bg'];
@@ -228,7 +227,6 @@ if ( !class_exists( "RichSnippets" ) )
 			
 			die();
 		}
-		
 		function iris_enqueue_scripts() 
 		{
 				wp_enqueue_script( 'wp-color-picker' );
@@ -236,41 +234,31 @@ if ( !class_exists( "RichSnippets" ) )
 				wp_enqueue_script( 'cp_custom', plugins_url( 'js/cp-script.min.js', __FILE__ ), array( 'jquery', 'wp-color-picker' ), '1.1', true );
 				wp_enqueue_style( 'wp-color-picker' );
 		}
-
 		function bsf_color_scripts() 
 		{
-		
 			global $wp_version;
-		
 			$bsf_script_array = array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'media-upload', 'thickbox' );
 	
 			// styles required for cmb
-	
 			$bsf_style_array = array( 'thickbox' );
 	
 			// if we're 3.5 or later, user wp-color-picker
-	
 			if ( 3.5 <= $wp_version ) {
 	
 				$bsf_script_array[] = 'wp-color-picker';
-	
 				$bsf_style_array[] = 'wp-color-picker';
 	
 			} else {
 	
 				// otherwise use the older 'farbtastic'
-	
 				$bsf_script_array[] = 'farbtastic';
-	
 				$bsf_style_array[] = 'farbtastic';
 	
 			}
-	
 		}
-		
 	}
 }
-	require_once('functions.php');
+	require_once(plugin_dir_path( __FILE__ ).'functions.php');
 	add_filter( 'bsf_meta_boxes', 'bsf_metaboxes' );
 // Instantiating the Class
 if (class_exists("RichSnippets")) {

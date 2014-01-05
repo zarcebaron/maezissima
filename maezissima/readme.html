@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>WordPress &#8250; LeiaMe</title>
+	<title>WordPress #8250; LeiaMe</title>
 	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
 </head>
 <body>
 <h1 id="logo">
-	<a href="http://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
-	<br /> Version 3.6.1
+	<a href="http://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" width="250" height="68" /></a>
+	<br /> Versão 3.8
 </h1>
 <p style="text-align: center">Plataforma de Publicação Semântica Pessoal</p>
 
 <h1>Seja bem-vindo</h1>
-<p>O WordPress é um projeto muito especial para mim. Todo desenvolvedor e colaborador acrescenta algo único nessa mistura, e juntos nós criamos algo bonito do qual me orgulho de fazer parte. Milhares de horas foram investidas no WordPress, e nós nos dedicamos para melhorá-lo todos os dias. Obrigado por você torná-lo parte de seu mundo.</p>
+<p><em>O WordPress é um projeto muito especial para mim. Todo desenvolvedor e colaborador acrescenta algo único nessa mistura, e juntos nós criamos algo bonito do qual me orgulho de fazer parte. Milhares de horas foram investidas no WordPress, e nós nos dedicamos para melhorá-lo todos os dias. Obrigado por você torná-lo parte de seu mundo.</em></p>
 <p style="text-align: right">&#8212; Matt Mullenweg</p>
 
 <h1>A famosa instalação de 5 minutos</h1>
@@ -26,7 +26,7 @@
 	        <li>Abra o arquivo <span class="file"><a href="wp-admin/install.php">/wp-admin/install.php</a></span> no seu navegador.</li>
 	    </ol>
 	</li>
-	<li>Quando o arquivo e a configuração estiverem prontos, o instalador criará as tabelas necessárias para o seu blog. Se ocorrer algum erro, confira mais uma vez seu arquivo <code>wp-config.php</code>, e tente novamente. Se falhar novamente, visite o <a href="http://wordpress.org/support/">fórun de suporte</a> com todas as informações que você puder reunir.</li>
+	<li>Quando o arquivo e configuração estiver pronto, o instalador criará as tabelas necessárias para o seu blog. Se ocorrer algum erro, confira mais uma vez seu arquivo <code>wp-config.php</code>, e tente novamente. Se  falhar novamente, visite os <a href="http://wordpress.org/support/">fóruns de suporte</a> com todas as informações que você puder reunir.</li>
 	<li><strong>Se você não digitou uma senha, anote a senha fornecida para você.</strong> Se você não forneceu um nome de usuário, ele será <code>admin</code>.</li>
 	<li>A instalação deve então encaminhá-lo para a <a href="wp-login.php">página de login</a>. Preencha o nome de usuário e a senha escolhida durante a instalação. Se uma senha foi gerada para você, você pode clicar em 'Perfil' para alterar a senha.</li>
 </ol>
@@ -46,6 +46,9 @@
 	    <li>Faça o upload dos novos arquivos.</li>
 	    <li>Acesse a página <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a> com seu navegador.</span></li>
 </ol>
+
+<h2>Modificações nos Modelos dos Temas</h2>
+<p>Se você personalizou os modelos de seu tema, provavelmente terá que fazer algumas modificações em todas versões mais importantes. </p>
 
 <h1>Migrando de outros sistemas</h1>
 <p>O WordPress consegue <a href="http://codex.wordpress.org/pt-br:Importando_conte%C3%BAdo">importar conteúdo de vários sistemas</a>. Primeiro você precisa instalar o WordPressd conforme descrito acima, e depois utilize <a href="wp-admin/import.php" title="Importar para o WordPress">nossa ferramenta para importar</a>.</p>
@@ -77,20 +80,30 @@
 		<dd>Há um canal de chat online que é usado para discussões entre pessoas que utilizam o WordPress e ocasionalmente para tópicos de suporte. A página do wiki acima deve apontá-lo na direção correta. (<a href="irc://irc.freenode.net/wordpress">irc.freenode.net #wordpress</a>)</dd>
 </dl>
 
+<h1>Interfaces <abbr title="eXtensible Markup Language">XML</abbr>-<abbr title="Remote Procedure Call">RPC</abbr> e Atom</h1>
+<p>Você pode publicar no seu blog WordPress com ferramentas como o <a href="http://download.live.com/writer">Windows Live Writer</a>, <a href="http://illuminex.com/ecto/">Ecto</a>, <a href="http://bloggar.com/">w.bloggar</a>, <a href="http://radio.userland.com">Radio Userland</a> (o que significa que você pode usar o recurso email-to-blog do Radio), <a href="http://www.newzcrawler.com/">NewzCrawler</a>, e outras ferramentas que possuem suporte a <abbr title="application programming interface">API</abbr> para blogs! :) Você pode ler mais sobre isso no <a href="http://codex.wordpress.org/XML-RPC_Support">suporte ao <abbr>XML</abbr>-<abbr>RPC</abbr> no Codex</a>.</p>
+
+<h1>Publicar Via Email</h1>
+<p>Você pode publicar seu post a partir de um cliente de email! Para configurar isso vá para página 'Configurações/Escrita&quot; do seu admin e preencha os detalhes da conexão com sua conta <abbr title="Post Office Protocol version 3">POP3</abbr> secreta. Depois você precisa configurar o arquivo <code>wp-mail.php</code> para executar periodicamente a verificação de novos posts na caixa postal. Você pode fazer isso com <a href="http://en.wikipedia.org/wiki/Cron">cron</a>-jobs, ou se seu servidor na possui suporte a isso, você pode procurar pelos diversos serviços de monitoramento de sites, e depois fazê-los verificar o <abbr title="Uniform Resource Locator">URL</abbr> do arquivo <code>wp-mail.php</code>.</p>
+<p>Publicar é fácil: qualquer email enviado para o endereço que você especificou será publicado, com o assunto como título. É melhor manter este endereço bem guardado. O código irá <em>apagar</em> emails que foram publicados com sucesso.</p>
+
+<h1>Funções de Usuários</h1>
+<p>Nós introduzimos um sistema bastante flexível e funções de usuários na versão 2.0. Você pode <a href="http://codex.wordpress.org/Roles_and_Capabilities">ler mais sobre as Funções e Capacidades no Codex</a> (em inglês).</p>
+
 <h1>Notas Finais</h1>
 <ul>
-	<li>Se você tiver qualquer sugestão, idéias, ou comentários ou se você (glup!) encontrou um erro, participe conosco do <a href="http://br.forums.wordpress.org/">Fórum de Suporte</a>.</li>
-	<li>O WordPress tem uma <abbr title="application programming interface">API</abbr> de plugin robusta que torna a criação de plugins fácil. Se você for um programador interessado em utilizar esta funcionalidade, consulte a <a href="http://codex.wordpress.org/Plugin_API" title="WordPress plugin API">documentação de plugin no Codex</a> (em inglês). Na grande maioria dos casos, não será necessário modificar o código principal.</li>
+	<li>Se você tiver qualquer sugestão, idéias, ou comentários ou se você (glup!) encontrou um erro, participe conosco dos <a href="http://br.forums.wordpress.org/">Fóruns de Suporte</a>.</li>
+	<li>Agora, o WordPress tem uma <abbr title="application programming interface">API</abbr> de plugin robusta que torna a criação de plugins fácil. Se você for um programador interessado em utilizar esta funcionalidade, consulte a <a href="http://codex.wordpress.org/Plugin_API" title="WordPress plugin API">documentação de plugin no Codex</a> (em inglês). Na grande maioria dos casos, não será necessário modificar o código principal.</li>
 </ul>
 
 
 <h1>Share the Love</h1>
 <p>O Wordpress não tem uma campanha de marketing multi-milionária ou o patrocínio de celebridades, mas temos algo muito melhor: você. Se você gostar do WordPress, considere a possibilidade de recomendá-lo a um amigo ou configurá-lo para alguém com menos conhecimentos do que você, ou ainda, escrever para um autor que não conheça o WordPress.</p>
 
-<p>O WordPress é a continuação oficial do <a href="http://cafelog.com/">b2/cafélog</a>, que era desenvolvido pelo Michel V. O trabalho foi continuado pelos <a href="http://wordpress.org/about/">desenvolvedores do WordPress</a>. Se você quiser apoiar o WordPress, por favor, considere fazer uma <a href="http://wordpress.org/donate/" title="Donate to WordPress">doação</a>.</p>
+<p>O WordPress é a continuação oficial do <a href="http://cafelog.com/">b2/cafélog</a>, que veio do Michel V. O trabalho foi continuado pelos <a href="http://wordpress.org/about/">desenvolvedores do WordPress</a>. Se você quiser apoiar o WordPress, por favor, considere fazer uma <a href="http://wordpress.org/donate/" title="Donate to WordPress">doação</a>.</p>
 
 <h1>Licença</h1>
-<p>O WordPress é distribuído sob a licença <abbr title="GNU General Public License">GPL</abbr> versão 2 ou qualquer versão mais recente (a sua escolha). Veja <a href="license.txt">license.txt</a>.</p>
+<p>O WordPress é distribuído sob a licença <abbr title="GNU General Public License">GPL</abbr> (veja <a href="license.txt">license.txt</a>).</p>
 
 </body>
 </html>

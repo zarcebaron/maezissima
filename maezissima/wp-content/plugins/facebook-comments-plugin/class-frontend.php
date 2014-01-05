@@ -26,7 +26,7 @@ $options = get_option('fbcomments');
 if (!isset($options['fbml'])) {$options['fbml'] = "";}
 if ($options['fbml'] == 'on') {
 ?>
-<!-- Facebook Comments for WordPress: http://3doordigital.com/wordpress/plugins/facebook-comments/ -->
+<!-- Facebook Comments for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -70,7 +70,7 @@ if (!isset($options['count'])) {$options['count'] = "off";}
 			}
 			$commenttitle .= $options['title']."</h3>";
 		}
-		$content .= "<!-- Facebook Comments for WordPress: http://3doordigital.com/wordpress/plugins/facebook-comments/ -->".$commenttitle.$commentcount;
+		$content .= "<!-- Facebook Comments for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->".$commenttitle.$commentcount;
 
       	if ($options['html5'] == 'on') {
 			$content .=	"<div class=\"fb-comments\" data-href=\"".get_permalink()."\" data-num-posts=\"".$options['num']."\" data-width=\"".$options['width']."\" data-colorscheme=\"".$options['scheme']."\"></div>";
@@ -82,7 +82,7 @@ if (!isset($options['count'])) {$options['count'] = "off";}
     if ($options['linklove'] != 'no') {
         if ($options['linklove'] != 'off') {
             if (empty($fbcomments[linklove])) {
-      $content .= '<p>Powered by <a href="http://3doordigital.com/wordpress/plugins/facebook-comments/">Facebook Comments</a></p>';
+      $content .= '<p>Powered by <a href="http://peadig.com/wordpress-plugins/facebook-comments/">Facebook Comments</a></p>';
     }}}
   }
 return $content;
@@ -115,7 +115,7 @@ function fbcommentshortcode($fbatts) {
 			}
 			$commenttitle .= $fbcomments[title]."</h3>";
 		}
-		$fbcommentbox = "<!-- Facebook Comments for WordPress: http://3doordigital.com/wordpress/plugins/facebook-comments/ -->".$commenttitle.$commentcount;
+		$fbcommentbox = "<!-- Facebook Comments for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->".$commenttitle.$commentcount;
 
       	if ($fbcomments[html5] == 'on') {
 			$fbcommentbox .=	"<div class=\"fb-comments\" data-href=\"".$url."\" data-num-posts=\"".$fbcomments[num]."\" data-width=\"".$fbcomments[width]."\" data-colorscheme=\"".$fbcomments[scheme]."\"></div>";
@@ -125,7 +125,7 @@ function fbcommentshortcode($fbatts) {
      }
 
 	if (!empty($fbcomments[linklove])) {
-      $fbcommentbox .= '<p>Powered by <a href="http://3doordigital.com/wordpress/plugins/facebook-comments/">Facebook Comments</a></p>';
+      $fbcommentbox .= '<p>Powered by <a href="http://peadig.com/wordpress-plugins/facebook-comments/">Facebook Comments</a></p>';
 	}
   return $fbcommentbox;
 }

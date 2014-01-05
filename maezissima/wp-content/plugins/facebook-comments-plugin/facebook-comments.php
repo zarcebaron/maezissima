@@ -3,12 +3,12 @@
 Plugin Name:  Facebook Comments
 Plugin URI:   http://3doordigital.com/wordpress/plugins/facebook-comments/?utm_source=WordPress&utm_medium=Admin&utm_campaign=Facebook%2BComments
 Description:  Facebook comments can be annoying to set up. This plugin makes it simple to add the Facebook comments system to your WordPress site without any hassle. You can also insert the comment box as a shortcode into any post, page or template and use your own settings for each time you do it!
-Version:      2.0.6
+Version:      2.1.1
 Author: Alex Moss
-Author URI: http://alex-moss.co.uk/
+Author URI: http://peadig.com/author/alex-moss/
 License: GPL v3
 
-Copyright (C) 2010-2010, Alex Moss - alex@3doordigital.com
+Copyright (C) 2010-2010, Alex Moss - alex@peadig.com
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
