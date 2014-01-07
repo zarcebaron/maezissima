@@ -1,7 +1,6 @@
 (function ($) {
    $(document).ready(function(){
-
-	   $('.home #top-block-bg').each(function(){
+	  /* $('.home #top-block-bg').each(function(){
 		var $obj = $(this);
 		 
 			$(window).scroll(function() {
@@ -12,17 +11,19 @@
 				$obj.css('background-position', bgpos );
 		 
 			}); 
-		});
-				
+		});*/
+
+		//var num = 310; //number of pixels before modifying styles
 		$(window).bind('scroll', function () {
 			if ($(window).scrollTop() > 306) {
-				$('.home #mainmenu-block-bg').addClass('fixed');
-				$('.home #content').addClass('pad');					
+				$('#mainmenu-block-bg').addClass('fixed');
+				$('#content').addClass('pad');				
 			} else {
-				$('.home #mainmenu-block-bg').removeClass('fixed');
-				$('.home #content').removeClass('pad');												
+				$('#mainmenu-block-bg').removeClass('fixed');
+				$('#content').removeClass('pad');								
 			}
-		});
+		});		
+
 	});
 	 
 	onResize = (function() {
@@ -74,9 +75,8 @@
 			}
 	});
 	$(document).ready(hideFeat);
-	$(window).bind('resize', hideFeat);
-
-	 
+	$(window).bind('resize', hideFeat);	
+ 
 	/*
 	*  render_map
 	*
@@ -230,8 +230,7 @@
 		});
 	 
 	});
-	/* ENDS RENDER MAP*/
-
+	/* ENDS RENDER MAP*/	
 	    	
 }(jQuery));
 
