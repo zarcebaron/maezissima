@@ -4452,6 +4452,11 @@ ul.popular-post-widget li + li {border-top:1px solid #E0DECA}
 .entry-content h4 {
 	margin:50px 0 15px!important
 }
+.entry-content .author h2 {
+
+	color:#F8A060;
+	font-size:28px!important	
+}
 
 .entry-content h2 span {
 	font-size:18px!important;
@@ -4714,6 +4719,9 @@ table.colunas {
 	width:90%;
 	min-width:460px
 }
+table.colunas td {
+	vertical-align:top
+}
 table.colunas h3 {
 	font-size:23px!important;
 	color:#E8536E ;
@@ -4853,7 +4861,7 @@ table.colunas a:hover {color:#383431}
 	height:115px
 }
 
-#top-block-bg {background-attachment:scroll;background-position:0 35px!important}
+#top-block-bg {background-attachment:fixed!important;background-position:0 35px!important}
 
 
 .banner {
@@ -4906,6 +4914,10 @@ table.colunas a:hover {color:#383431}
 	background:#ebe9d3
 }
 
+#mainmenu-mobile li.top-mobile {
+	background:#cccab8;
+}
+
 /* FIXED NAV */
 #mainmenu-block-bg.fixed {
 	position:fixed;
@@ -4932,8 +4944,7 @@ body.home .main-content .box-content + .box-content {
 	background:#fffff3;
 	display:none
 }
-.main-content,
-.r-sidebar {margin-top:30px}
+.main-content {margin-top:30px}
 
 .home #wide-sidebar {
 	padding-top:10px
@@ -5049,9 +5060,13 @@ body.home .main-content .box-content + .box-content {
 	color:#383431;
 	margin:-10px 0 0
 }
+.r-sidebar {
+	position:relative;
+	top:-121px	
+}
 .home .r-sidebar {
 	position:relative;
-	top:-131px
+	top:-101px
 }
 
 /* ************************** */
@@ -5162,11 +5177,12 @@ and (max-width : 979px) {
 	#mainmenu-mobile {
 		display:block
 	}
-	#header {height:75px}
-	.social-header {display:none}
+	.box-title {margin:0}
 	
-
-
+	#header {height:75px}
+	.social-header,
+	#mainmenu-mobile .top-mobile {display:none}
+	
 }
 @media only screen 
 and (max-width : 767px) {
@@ -5224,11 +5240,15 @@ and (max-width : 480px) {
 	body.home .main-content .box-content {
 		padding:10px
 	}
-	#menu-top {display:none}
+	#menu-top,
+	#menu-top-menu,
+	.logo + .span6,
+	#mainmenu-mobile .top-mobile-home {display:none}
 	.logo {
 		float:none;
 		margin:3px auto
 	}
+	#mainmenu-mobile .top-mobile {display:block}
 	
 
 }

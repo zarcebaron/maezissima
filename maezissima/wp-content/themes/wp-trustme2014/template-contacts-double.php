@@ -10,14 +10,6 @@
 
 get_header(); ?>
 
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script>
-(function ($) {
-	$(function() {
-	$( "#tabs" ).tabs();
-	});
-}(jQuery));	
-</script>
 
   <!-- START CONTACTS CONTENT ENTRY -->
   <div id="content" class="container">
@@ -34,26 +26,17 @@ get_header(); ?>
           
           
           
-        <div id="tabs" class="entry-content">
-          <ul>
-            <li><a href="#tabs-1">Contato</a></li>
-            <li><a href="#tabs-2">Participar</a></li>
-          </ul>
-          <div id="tabs-1">
-            <p>Dúvidas, sugestões, dicas e até reclamações são sempre bem-vindas. Se preferir, pode encaminhar um e- mail diretamente para <strong>contato@maezissima.com.br</strong>.</p>
+        <div class="entry-content">
 
-<p><i>Caso deseje enviar seu depoimento, clique na aba <strong>Participar</strong> acima.</i></p>
+          <div>
+            <p>Dúvidas, sugestões, dicas, reclamações? Fale com a gente!
+            Se preferir, encaminhe um email diretamente para <strong>contato@maezissima.com.br</strong>.</p>
+
 			
            <?php echo do_shortcode('[easy_contact_forms fid=3]'); ?> 
           </div>
           
-          <div id="tabs-2">
-
-			<p>Participe da roda de conversa do Mãezíssima! Vamos mostrar o lado real dessa experiência maluca que é ter um filho. Envie para nós o seu relato!</p>
-
-            
-            <?php echo do_shortcode('[easy_contact_forms fid=5]'); ?>
-          </div>
+          
         </div>          
 
 

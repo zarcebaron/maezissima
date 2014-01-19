@@ -50,9 +50,9 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
+
 <!-- Start Top Content -->
 
-	<p class="testp"></p>
   <div id="header" itemscope itemtype="http://schema.org/WPHeader" >
 
     	<div class="top-menu-block">
@@ -76,7 +76,7 @@
         				<?php if ( ( stripslashes( $data['ct_facebook_link'] ) == '' ) && ( stripslashes( $data['ct_twitter_link'] ) == '' ) && ( stripslashes( $data['ct_skype_link'] ) == '' ) && ( stripslashes( $data['ct_google_link'] ) == '' ) && ( stripslashes( $data['ct_rss_link'] ) == '' ) && ( stripslashes( $data['ct_email_link'] ) == '' )) { ?>		    	
                         <div class="span12">
                     <?php } else { ?>										
-                        <div class="span6">
+                        <div class="span6 top">
                     <?php } ?>		
                             
                             <?php if ( has_nav_menu('secondary_menu') ) wp_nav_menu( array('theme_location' => 'secondary_menu', 'menu_class' => 'sf-menu add-nav')); ?>		    	
@@ -133,7 +133,7 @@
 		'feed'               => '',
 		'feed_type'          => '',
 		'feed_image'         => '',
-		'exclude'            => '1,14,17,18,19,20,50,64,138',
+		'exclude'            => '1,50',
 		'exclude_tree'       => '',
 		'include'            => '',
 		'hierarchical'       => 1,
@@ -147,7 +147,9 @@
 		'taxonomy'           => 'category',
 		'walker'             => null
 		); ?>
-    <li><a href="<?php echo home_url(); ?>">início</a></li>
+    <li class="top-mobile-home"><a href="<?php echo home_url(); ?>">início</a></li>
 	<?php wp_list_categories($args); ?> 
-    <li><a href="<?php echo home_url(); ?>">contato</a></li>   
+    <li class="top-mobile"><a href="http://www.maezissima.com.br/quem somos">quem somos</a></li>   
+    <li class="top-mobile"><a href="http://www.maezissima.com.br/apoiadores">apoiadores</a></li>       
+    <li class="top-mobile"><a href="http://www.maezissima.com.br/contato">contato</a></li>       
   </ul><!-- mainmenu-mobile -->  
