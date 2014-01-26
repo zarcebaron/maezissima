@@ -5,7 +5,7 @@ Plugin URI: http://www.brainstormforce.com
 Author: Brainstorm Force
 Author URI: http://www.brainstormforce.com
 Description: The All in One Rich Snippets gives the power to the blog author to control the rich snippets to be shown in the search results by the search engines.
-Version: 1.1.5
+Version: 1.1.6
 Text Domain: rich-snippets
 License: GPL2
 */
@@ -82,7 +82,8 @@ if ( !class_exists( "RichSnippets" ) )
 			wp_register_script( 'bsf-scripts-media', BSF_META_BOX_URL . 'js/media.js', '', '1.0' );
 			wp_enqueue_script( 'bsf-scripts-media' );
 			wp_enqueue_script('jquery-ui-datepicker');
-			wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+			if(!function_exists('vc_map'))
+				wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 		}
 		function post_new_enqueue($hook) {
 			if('post-new.php' != $hook )
@@ -97,7 +98,8 @@ if ( !class_exists( "RichSnippets" ) )
 			wp_register_script( 'bsf-scripts-media', BSF_META_BOX_URL . 'js/media.js', '', '1.0' );
 			wp_enqueue_script( 'bsf-scripts-media' );
 			wp_enqueue_script('jquery-ui-datepicker');
-			wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+			if(!function_exists('vc_map'))
+				wp_enqueue_style('jquery-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 		}
 		//Initialize the metabox class
 		function wp_initialize_bsf_meta_boxes() {
@@ -155,6 +157,7 @@ if ( !class_exists( "RichSnippets" ) )
 			$sub = $_POST['subject'];
 			$message = $_POST['message'];
 			$name = $_POST['name'];
+			$post_url = $_POST['post_url'];
 			
 			if($sub == "question")
 				$subject = "[AIOSRS] New question received from ".$name;
@@ -190,6 +193,10 @@ if ( !class_exists( "RichSnippets" ) )
 						<tr>
 							<td> Website : </td>
 							<td> <strong>'.$site.' </strong></td>
+						</tr>
+						<tr>
+							<td> Ref. Post URL : </td>
+							<td> <strong>'.$post_url.' </strong></td>
 						</tr>
 						<tr>
 							<td colspan="2"> Message : </td>

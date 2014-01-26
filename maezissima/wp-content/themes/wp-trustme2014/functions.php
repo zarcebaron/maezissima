@@ -504,7 +504,7 @@ function ct_scripts_method() {
 	if( !is_admin() ) {
 	
 		global $data;
-
+/*
 		/* Super Fish JS */
 		wp_register_script('super-fish',get_template_directory_uri().'/js/superfish.js',false, null , true);
 		wp_enqueue_script('super-fish',array('jquery'));	
@@ -538,6 +538,18 @@ function ct_scripts_method() {
 		/* Custom JS */
 		wp_register_script('custom-js',get_template_directory_uri().'/js/custom.js',false, null , true);
 		wp_enqueue_script('custom-js',array('jquery'));
+
+		/* EventON */
+		wp_register_script('eventon_script',plugins_url().'/eventon/assets/js/eventon_script.js',false, null , true);
+		wp_enqueue_script('eventon_script',array('jquery'));
+
+		/* EventON - Init Gmap */
+		wp_register_script('eventon_init_gmap',plugins_url().'/eventon/assets/js/eventon_init_gmap.js',false, null , true);
+		wp_enqueue_script('eventon_init_gmap',array('jquery'));		
+
+		/* EventON - Gen Gmap */
+		wp_register_script('eventon_gen_maps',plugins_url().'/eventon/assets/js/eventon_gen_maps.js',false, null , true);
+		wp_enqueue_script('eventon_gen_maps',array('jquery'));							
 		
 	
 	} /* End Include jQuery Libraries */
@@ -702,6 +714,7 @@ include("functions/trustme-news-ticker-widget.php");
 include("functions/trustme-slider-widget.php");
 include("functions/trustme-1-column-vert-magazine-widget.php");
 include("functions/trustme-1-column-horiz-magazine-widget.php");
+include("functions/trustme-1-homecolumn-horiz-magazine-widget-home.php");
 include("functions/trustme-2-columns-magazine-widget.php");
 include("functions/trustme-3-columns-magazine-widget.php");
 include("functions/trustme-ads728x90-widget.php");

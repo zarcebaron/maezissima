@@ -211,7 +211,9 @@
               
               <div class="single-social">
 
-				<div style="margin-right:30px" class="fb-like" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>                  
+				<!--<div style="margin-right:30px" class="fb-like" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div> -->
+                <div style="margin-right:30px" class="fb-like" data-width="450" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+              
                 <!-- Posicione esta tag onde você deseja que o botão +1 apareça. -->
                 <div class="g-plusone"></div>
                 
