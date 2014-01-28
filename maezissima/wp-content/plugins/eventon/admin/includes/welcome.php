@@ -100,7 +100,7 @@ class EVO_Welcome_Page {
 			
 			<a class="evo_admin_btn btn_prime" href="http://www.myeventon.com/support/" target='_blank'><?php _e( 'Support', 'eventon' ); ?></a>
 
-			<a class="evo_admin_btn btn_prime" href="http://www.myeventon.com/blog/" target='_blank'><?php _e( 'News', 'eventon' ); ?></a>
+			<a class="evo_admin_btn btn_prime" href="http://www.myeventon.com/news/" target='_blank'><?php _e( 'News', 'eventon' ); ?></a>
 			<a class="evo_admin_btn btn_prime" href="http://www.myeventon.com/documentation/eventon-changelog/" target='_blank'><?php _e( 'Changelog', 'eventon' ); ?></a>
 			
 		</p>

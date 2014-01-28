@@ -12,12 +12,45 @@
 			delay:	0,
 			fnt:	1,
 			cal:	'',
-			mapSpotId:	''
+			mapSpotId:	'',
+			_action:''
 		};
 		var options = $.extend({}, defaults, opt); 
 		
 		var geocoder;
 		
+
+		// popup lightbox generation
+		if(options._action=='lightbox'){
+
+			var cur_window_top = parseInt($(window).scrollTop()) + 50;
+			$('.evo_popin').css({'margin-top':cur_window_top});
+			
+			$('.evo_pop_body').html('');
+			var content = this.siblings('.event_description').html();
+			var content_front = this.html();
+			
+			var _content = $(content).not('.evcal_close');
+			
+		
+			$('.evo_pop_body').append('<div class="evopop_top">'+content_front+'</div>').append(_content);
+			
+			var this_map = $('.evo_pop_body').find('.evcal_gmaps');
+			var idd = this_map.attr('id');
+			this_map.attr({'id':idd+'_evop'});
+			
+			$('.evo_popup').fadeIn(300);
+			$('.evo_popbg').fadeIn(300);
+
+			// check if gmaps should run
+			if( this.data('gmtrig')=='1' && this.attr('gmap_status')!='null'){
+			
+				var cal = this.closest('div.ajde_evcal_calendar ');
+				loadl_gmaps_in(this, cal, idd+'_evop');
+			}
+
+		}
+
 		
 		if(options.fnt==1){
 			this.each(function(){
@@ -48,24 +81,28 @@
 		// gmaps on popup
 		if(options.fnt==4){
 			// check if gmaps should run
-			if( this.attr('gmtrig')=='1' && this.attr('gmap_status')!='null'){
+			if( this.data('gmtrig')=='1' && this.attr('gmap_status')!='null'){
 			
 				var cal = this.closest('div.ajde_evcal_calendar ');
 				loadl_gmaps_in(this, cal, options.mapSpotId);
 			}			
 			
 		}
+
+		function run_fnt_4(){
+
+		}
 		
 		
 		// function to load google maps for eventcard
 		function load_googlemaps_here(obj){
-			if( obj.attr('gmstat')!= '1'){				
-				obj.attr({'gmstat':'1'});
+			if( obj.data('gmstat')!= '1'){				
+				obj.attr({'data-gmstat':'1'});
 			}
 			
 			var cal = obj.closest('div.ajde_evcal_calendar ');
 			
-			if( obj.attr('gmtrig')=='1' && obj.attr('gmap_status')!='null'){
+			if( obj.data('gmtrig')=='1' && obj.attr('gmap_status')!='null'){
 				loadl_gmaps_in(obj, cal, '');
 			}			
 				
@@ -74,7 +111,7 @@
 		
 		// Load the google map on the object
 		function loadl_gmaps_in(obj, cal, mapId){
-			var mapformat = cal.attr('mapformat');				
+			var mapformat = cal.data('mapformat');				
 			var ev_location = obj.find('.evcal_desc');
 			
 			var latlon = ev_location.attr('latlon');
@@ -92,10 +129,11 @@
 				obj.siblings('.event_description').find('.evcal_gmaps').attr('id');
 				
 				
-			var zoom = cal.attr('mapzoom');
+			var zoom = cal.data('mapzoom');
 			var zoomlevel = (typeof zoom !== 'undefined' && zoom !== false)? parseInt(zoom):12;
 			
-			var scroll = cal.attr('mapscroll');		
+			var scroll = cal.data('mapscroll');	
+			
 								
 			//obj.siblings('.event_description').find('.evcal_gmaps').html(address);
 			initialize(map_canvas_id, address, mapformat, zoomlevel, location_type, scroll);

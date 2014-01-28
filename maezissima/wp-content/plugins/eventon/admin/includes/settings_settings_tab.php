@@ -30,7 +30,7 @@
 		$rearrange_items['paypal']='<p val="paypal">Paypal</p>';
 	
 	// custom fields
-	for($x=1; $x<3; $x++){
+	for($x=1; $x<4; $x++){
 		if( !empty($evcal_opt[1]['evcal_ec_f'.$x.'a1']))
 			$rearrange_items['customfield'.$x] = '<p val="customfield'.$x.'">'.$evcal_opt[1]['evcal_ec_f'.$x.'a1'].'</p>';
 	}
@@ -90,20 +90,20 @@
 			),
 
 			array('id'=>'evcal_font_fam','type'=>'text','name'=>'Primary Calendar Font family <i>(Note: type the name of the font that is supported in your website. eg. Arial)</i>'),	
-			array('id'=>'fs_sort_options','type'=>'fontation','name'=>'Sort Options Text (Hover)',
+			array('id'=>'fs_sort_options','type'=>'fontation','name'=>'Sort Options Text',
 				'variations'=>array(
-					array('id'=>'evcal__sot', 'type'=>'color', 'default'=>'ededed'),
-					array('id'=>'evcal__sotH', 'type'=>'color', 'default'=>'d8d8d8'),
+					array('id'=>'evcal__sot', 'name'=>'Default State', 'type'=>'color', 'default'=>'ededed'),
+					array('id'=>'evcal__sotH', 'name'=>'Hover State', 'type'=>'color', 'default'=>'d8d8d8'),
 				)
 			),
 
 			array('id'=>'evcal_fcx','type'=>'subheader','name'=>'EventTop Styles'),
 			array('id'=>'evcal__fc3','type'=>'color','name'=>'Event Title font color', 'default'=>'6B6B6B'),
 			array('id'=>'evcal__fc6','type'=>'color','name'=>'Text under event title (on EventTop. Eg. Time, location etc.)','default'=>'8c8c8c'),
-			array('id'=>'fs_fonti','type'=>'fontation','name'=>'Background Color (Hover)',
+			array('id'=>'fs_fonti','type'=>'fontation','name'=>'Background Color',
 				'variations'=>array(
-					array('id'=>'evcal__bgc4', 'type'=>'color', 'default'=>'fafafa'),
-					array('id'=>'evcal__bgc4h', 'type'=>'color', 'default'=>'f4f4f4'),
+					array('id'=>'evcal__bgc4', 'name'=>'Default State', 'type'=>'color', 'default'=>'fafafa'),
+					array('id'=>'evcal__bgc4h', 'name'=>'Hover State', 'type'=>'color', 'default'=>'f4f4f4'),
 				)
 			),
 
@@ -126,20 +126,20 @@
 			array('id'=>'evcal__bc1','type'=>'color','name'=>'Event Card background color', 'default'=>'eaeaea'),
 			
 			array('id'=>'evcal_fcx','type'=>'subheader','name'=>'Buttons'),
-			array('id'=>'fs_fonti3','type'=>'fontation','name'=>'Button Color (Hover)',
+			array('id'=>'fs_fonti3','type'=>'fontation','name'=>'Button Color',
 				'variations'=>array(
-					array('id'=>'evcal_gen_btn_bgc', 'type'=>'color', 'default'=>'237ebd'),
-					array('id'=>'evcal_gen_btn_bgcx', 'type'=>'color', 'default'=>'237ebd'),
+					array('id'=>'evcal_gen_btn_bgc', 'name'=>'Default State', 'type'=>'color', 'default'=>'237ebd'),
+					array('id'=>'evcal_gen_btn_bgcx', 'name'=>'Hover State', 'type'=>'color', 'default'=>'237ebd'),
 				)
-			),array('id'=>'fs_fonti4','type'=>'fontation','name'=>'Button Text Color (Hover)',
+			),array('id'=>'fs_fonti4','type'=>'fontation','name'=>'Button Text Color',
 				'variations'=>array(
-					array('id'=>'evcal_gen_btn_fc', 'type'=>'color', 'default'=>'ffffff'),
-					array('id'=>'evcal_gen_btn_fcx', 'type'=>'color', 'default'=>'ffffff'),
+					array('id'=>'evcal_gen_btn_fc', 'name'=>'Default State', 'type'=>'color', 'default'=>'ffffff'),
+					array('id'=>'evcal_gen_btn_fcx', 'name'=>'Hover State', 'type'=>'color', 'default'=>'ffffff'),
 				)
-			),array('id'=>'fs_fonti5','type'=>'fontation','name'=>'Close Button Color (Hover)',
+			),array('id'=>'fs_fonti5','type'=>'fontation','name'=>'Close Button Color',
 				'variations'=>array(
-					array('id'=>'evcal_closebtn', 'type'=>'color', 'default'=>'eaeaea'),
-					array('id'=>'evcal_closebtnx', 'type'=>'color', 'default'=>'c7c7c7'),
+					array('id'=>'evcal_closebtn', 'name'=>'Default State', 'type'=>'color', 'default'=>'eaeaea'),
+					array('id'=>'evcal_closebtnx', 'name'=>'Hover State', 'type'=>'color', 'default'=>'c7c7c7'),
 				)
 			),
 		)
@@ -153,7 +153,7 @@
 			'display'=>'show',
 			'tab_name'=>'General Settings',
 			'top'=>'4',
-			'fields'=>array(
+			'fields'=> apply_filters('eventon_settings_general', array(
 				array('id'=>'evcal_cal_hide','type'=>'yesno','name'=>'Hide Calendar from front-end',),
 				array('id'=>'evcal_arrow_hide','type'=>'yesno','name'=>'Hide Front-end arrow navigation',),
 				array('id'=>'evcal_cal_hide_past','type'=>'yesno','name'=>'Hide past events for default calendar(s)','afterstatement'=>'evcal_cal_hide_past'),	
@@ -177,7 +177,7 @@
 				array('id'=>'evcal_eventt','type'=>'text','name'=>'Custom name for Event Type #1',),
 				array('id'=>'evcal_eventt2','type'=>'text','name'=>'Custom name for Event Type #2',),
 			
-		)),		
+		))),		
 		
 		array(
 			'id'=>'evcal_005',
@@ -270,8 +270,9 @@
 				array('id'=>'evcal_top_fields', 'type'=>'checkboxes','name'=>'Additional data fields for eventTop: <i>(NOTE: <b>Event Name</b> and <b>Event Date</b> are default fields)</i>',
 						'options'=> apply_filters('eventon_eventop_fields', array(
 							'time'=>'Event Time (to and from)',
-							'location'=>'Event Location address',
-							'eventtype'=>'Event Type value',
+							'location'=>'Event Location Address',
+							'locationame'=>'Event Location Name',
+							'eventtype'=>'Event Type Value',
 							'monthname'=>'Event Start Month eg. SEP',
 							'dayname'=>'Event Day Name (Only for one day events)',
 							'organizer'=>'Event Organizer',
@@ -342,19 +343,25 @@
 				array('id'=>'evcal_af_1','type'=>'yesno','name'=>'Activate Additional Field #1','legend'=>'This will activate additional event meta field.','afterstatement'=>'evcal_af_1'),
 				array('id'=>'evcal_af_1','type'=>'begin_afterstatement'),
 				array('id'=>'evcal_ec_f1a1','type'=>'text','name'=>'Field Name*'),
+				array('id'=>'evcal_ec_f1a2','type'=>'dropdown','name'=>'Content Type', 'options'=>array('text'=>'Single line Text','textarea'=>'Multiple lines of text')),
 				array('id'=>'evcal__fai_00c1','type'=>'icon','name'=>'Icon','default'=>'fa-asterisk'),
+				array('id'=>'evcal_ec_f1a3','type'=>'yesno','name'=>'Hide this field from front-end calendar'),
 				array('id'=>'evcal_af_1','type'=>'end_afterstatement'),
 
 				array('id'=>'evcal_af_2','type'=>'yesno','name'=>'Activate Additional Field #2','legend'=>'This will activate additional event meta field.','afterstatement'=>'evcal_af_2'),
 				array('id'=>'evcal_af_2','type'=>'begin_afterstatement'),
 				array('id'=>'evcal_ec_f2a1','type'=>'text','name'=>'Field Name*'),
+				array('id'=>'evcal_ec_f2a2','type'=>'dropdown','name'=>'Content Type', 'options'=>array('text'=>'Single line Text','textarea'=>'Multiple lines of text')),
 				array('id'=>'evcal__fai_00c2','type'=>'icon','name'=>'Icon','default'=>'fa-asterisk'),
+				array('id'=>'evcal_ec_f2a3','type'=>'yesno','name'=>'Hide this field from front-end calendar'),
 				array('id'=>'evcal_af_2','type'=>'end_afterstatement'),
 
 				array('id'=>'evcal_af_3','type'=>'yesno','name'=>'Activate Additional Field #3','legend'=>'This will activate additional event meta field.','afterstatement'=>'evcal_af_3'),
 				array('id'=>'evcal_af_3','type'=>'begin_afterstatement'),
 				array('id'=>'evcal_ec_f3a1','type'=>'text','name'=>'Field Name*'),
+				array('id'=>'evcal_ec_f3a2','type'=>'dropdown','name'=>'Content Type', 'options'=>array('text'=>'Single line Text','textarea'=>'Multiple lines of text')),
 				array('id'=>'evcal__fai_00c3','type'=>'icon','name'=>'Icon','default'=>'fa-asterisk'),
+				array('id'=>'evcal_ec_f3a3','type'=>'yesno','name'=>'Hide this field from front-end calendar'),
 				array('id'=>'evcal_af_3','type'=>'end_afterstatement'),
 
 

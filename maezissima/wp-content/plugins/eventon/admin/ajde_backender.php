@@ -2,9 +2,9 @@
 
 /*
 	AJDE Backender 
-	version: 2.0
+	version: 2.1
 	Description: print out back end customization form set up for the plugin settings
-	Date: 2014-1-5
+	Date: 2014-1-24
 */
 
 /** Store settings in this array */
@@ -25,6 +25,11 @@ function print_ajde_customization_form($cutomization_pg_array, $evOPT, $extra_ta
 	$leftside=$rightside='';
 	$count=1;
 	
+
+	
+
+
+
 	foreach($cutomization_pg_array as $cpa=>$cpav){								
 		// left side tabs with different level colors
 		$ls_level_code = (isset($cpav['level']))? 'class="'.$cpav['level'].'"': null;
@@ -41,16 +46,20 @@ function print_ajde_customization_form($cutomization_pg_array, $evOPT, $extra_ta
 				<h3 style='margin-bottom:10px' >".__($cpav['name'],'eventon')."</h3>
 				<em class='hr_line'></em>";
 
-
-
-				// font awesome
-				require_once('includes/settings_fa_fonts.php');
-
-				$rightside.= "<div style='display:none' class='fa_icons_selection'><div class='fai_in'><ul class='faicon_ul'>";
-				foreach($font_ as $fa){
-					$rightside.= "<li><i data-name='".$fa."' class='fa ".$fa."'></i>".$fa."</li>";
+				if($cpav['id'] == 'evcal_002'){
+					// color selector guide box
+					$rightside.= "<div style='display:none' id='evo_color_guide'>Testing</div>";
+				}else{	
+					// font awesome
+					require_once('includes/settings_fa_fonts.php');
+	
+					$rightside.= "<div style='display:none' class='fa_icons_selection'><div class='fai_in'><ul class='faicon_ul'>";
+					foreach($font_ as $fa){
+						$rightside.= "<li><i data-name='".$fa."' class='fa ".$fa."'></i>".$fa."</li>";
+					}
+					$rightside.= "</ul></div></div>";
 				}
-				$rightside.= "</ul></div></div>";
+
 
 
 
@@ -182,9 +191,12 @@ function print_ajde_customization_form($cutomization_pg_array, $evOPT, $extra_ta
 										$evOPT[ $variation['id']]:$variation['default'];
 									$hex_color_val = (!empty($evOPT[ $variation['id'] ]))? $evOPT[ $variation['id'] ]: null;
 									
+									$title = (!empty($variation['name']))? $variation['name']:$hex_color;
+									$_has_title = (!empty($variation['name']))? true:false;
+
 									// code
 									$rightside.= "<p class='acus_line color'>
-										<em><span class='colorselector' style='background-color:#".$hex_color."' hex='".$hex_color."' title='".$hex_color."'></span>
+										<em><span class='colorselector ".( ($_has_title)? 'hastitle': '')."' style='background-color:#".$hex_color."' hex='".$hex_color."' title='".$hex_color."' alt='".$title."'></span>
 										<input name='".$variation['id']."' class='backender_colorpicker' type='hidden' value='".$hex_color_val."' /></em></p>";
 
 								break;

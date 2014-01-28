@@ -24,7 +24,6 @@
 			<?php the_content(); ?>
 			
 		</div>
-		WORK MAN
 		<?php
 	
 	endwhile;

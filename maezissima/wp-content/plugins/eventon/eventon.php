@@ -3,11 +3,11 @@
  * Plugin Name: EventON
  * Plugin URI: http://www.myeventon.com/
  * Description: A complete event calendar experience
- * Version: 2.2.4
+ * Version: 2.2.5
  * Author: AshanJay
  * Author URI: http://www.ashanjay.com
  * Requires at least: 3.7
- * Tested up to: 3.8
+ * Tested up to: 3.8.1
  *
  * Text Domain: eventon
  * Domain Path: /lang/languages/
@@ -34,7 +34,7 @@ define( "BACKEND_URL", get_bloginfo('url').'/wp-admin/' );
 if ( ! class_exists( 'EventON' ) ) {
 
 class EventON {
-	public $version = '2.2.4';
+	public $version = '2.2.5';
 	/**
 	 * @var evo_generator
 	 */
@@ -146,7 +146,8 @@ class EventON {
 			$this->shortcodes		= new EVO_Shortcodes();		
 					
 			// Hooks
-			add_action( 'wp_enqueue_scripts', array( $this, 'frontend_scripts' ), 10 );
+			add_action( 'init', array( $this, 'register_scripts' ), 10 );
+
 			add_action( 'wp_enqueue_scripts', array( $this, 'load_default_evo_styles' ), 10 );
 			add_action( 'wp_head', array( $this, 'generator' ) );			
 			add_filter( 'template_include', array( $this, 'template_loader' ) );
@@ -342,15 +343,28 @@ class EventON {
 	 * @access public
 	 * @return void
 	 */
-	public function frontend_scripts() {
+	public function register_scripts() {
 		global $post;
 		
 		$evcal_val1= get_option('evcal_options_evcal_1');
 		
+		
 		// Google gmap API script -- loadded from class-calendar_generator.php		
+
 		wp_register_script('evcal_ajax_handle', AJDE_EVCAL_URL. '/assets/js/eventon_script.js', array('jquery'),'1.0',true );
-		wp_localize_script( 'evcal_ajax_handle', 'the_ajax_script', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));	
+		wp_localize_script( 'evcal_ajax_handle', 'the_ajax_script', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
+
+
+
+		// google maps	
 		wp_register_script('eventon_gmaps', AJDE_EVCAL_URL. '/assets/js/eventon_gen_maps.js', array('jquery'),'1.0',true );	
+		wp_register_script('eventon_init_gmaps', AJDE_EVCAL_URL. '/assets/js/eventon_init_gmap.js', array('jquery'),'1.0',true );
+		wp_register_script( 'eventon_init_gmaps_blank', AJDE_EVCAL_URL. '/assets/js/eventon_init_gmap_blank.js', array('jquery'),'1.0',true ); // load a blank initiate gmap javascript
+		wp_register_script( 'evcal_gmaps', 'https://maps.googleapis.com/maps/api/js?sensor=false', array('jquery'),'1.0',true);
+
+
+
+	// STYLES
 
 		wp_register_style('evo_font_icons',AJDE_EVCAL_URL.'/assets/fonts/font-awesome.css');		
 		
@@ -359,15 +373,23 @@ class EventON {
 				
 		// Defaults styles and dynamic styles
 		wp_register_style('evcal_cal_default',AJDE_EVCAL_URL.'/assets/css/eventon_styles.css');	
-		wp_register_style('evo_dynamic_css', admin_url('admin-ajax.php').'?action=evo_dynamic_css');
+		//wp_register_style('evo_dynamic_css', admin_url('admin-ajax.php').'?action=evo_dynamic_css');
 
 		// LOAD custom google fonts for skins		
 		$gfont="http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400,300";
 		wp_register_style( 'evcal_google_fonts', $gfont, '', '', 'screen' );
 		
 		
-		// attache dynamic styles to header
-		//wp_register_style('evo_styles','eventon_dynamic_inline_styles');
+
+
+		if(is_multisite()) {
+			$uploads = wp_upload_dir();
+			wp_register_style('eventon_dynamic_styles', $uploads['baseurl'] . '/eventon_dynamic_styles.css', 'style');
+		} else {
+			wp_register_style('eventon_dynamic_styles', 
+				AJDE_EVCAL_URL. '/assets/css/eventon_dynamic_styles.css', 'style');
+		}
+
 	}	
 	
 	public function load_default_evo_scripts(){
@@ -375,10 +397,14 @@ class EventON {
 		wp_enqueue_script('eventon_gmaps');
 	}
 	public function load_default_evo_styles(){
+		
 		wp_enqueue_style( 'evcal_cal_default');
-		wp_enqueue_style( 'evo_dynamic_css');
+		wp_enqueue_style( 'eventon_dynamic_styles');
+		//wp_enqueue_style( 'evo_dynamic_css');		
 		wp_enqueue_style( 'evcal_google_fonts' );
 		wp_enqueue_style( 'evo_font_icons' );
+
+
 
 		//wp_enqueue_style( 'eventon_dynamic_inline_styles');
 	}
@@ -459,19 +485,26 @@ class EventON {
 	 * LOAD Backender UI and functionalities for settings.
 	 */
 	public function load_ajde_backender(){
-		// thick box
 		wp_enqueue_script('thickbox');
 		wp_enqueue_style('thickbox');
-		
-		wp_enqueue_script('backender_colorpicker',AJDE_EVCAL_URL.'/assets/js/colorpicker.js' ,array('jquery'),'1.0', true);
-		wp_enqueue_script('ajde_backender_script',AJDE_EVCAL_URL.'/assets/js/ajde_backender_script.js', array('jquery', 'jquery-ui-core', 'jquery-ui-sortable'), '1.0', true );
-		wp_enqueue_style( 'ajde_backender_styles',AJDE_EVCAL_URL.'/assets/css/ajde_backender_style.css');
-		wp_enqueue_style( 'colorpicker_styles',AJDE_EVCAL_URL.'/assets/css/colorpicker_styles.css');
-		
+
+		wp_enqueue_script('backender_colorpicker');
+		wp_enqueue_script('ajde_backender_script');
+
 		include_once('admin/ajde_backender.php');
 		
 	}
 	
+		public function enqueue_backender_styles(){
+			wp_enqueue_style( 'ajde_backender_styles',AJDE_EVCAL_URL.'/assets/css/ajde_backender_style.css');
+			wp_enqueue_style( 'colorpicker_styles',AJDE_EVCAL_URL.'/assets/css/colorpicker_styles.css');
+			
+		}
+		public function register_backender_scripts(){
+			wp_register_script('backender_colorpicker',AJDE_EVCAL_URL.'/assets/js/colorpicker.js' ,array('jquery'),'1.0', true);
+			wp_register_script('ajde_backender_script',AJDE_EVCAL_URL.'/assets/js/ajde_backender_script.js', array('jquery', 'jquery-ui-core', 'jquery-ui-sortable'), '1.0', true );
+			
+		}
 	
 	
 	/**

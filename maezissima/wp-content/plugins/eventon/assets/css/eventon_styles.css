@@ -53,14 +53,15 @@
 	
 
 /** eventON Button **/
-	.ajde_evcal_calendar .eventon_list_event .event_description .evcal_btn{	
+	.ajde_evcal_calendar .eventon_list_event .event_description .evcal_btn, .evo_pop_body .evcal_btn{	
 		font:bold 14px arial;
 		display:inline-block;
 		padding:8px 12px!important; margin-top:4px;
-		text-transform:uppercase
+		text-transform:uppercase;
+		text-decoration: none;
 		
 	}
-	.ajde_evcal_calendar .eventon_list_event .event_description .evcal_btn:hover{
+	.ajde_evcal_calendar .eventon_list_event .event_description .evcal_btn:hover, .evo_pop_body .evcal_btn:hover{
 		opacity:0.8
 	}
 
@@ -172,6 +173,7 @@
 
 
 /*-- event loading --*/
+#eventon_loadbar{height: 2px;width: 0%;}
 #eventon_loadbar_section{border-bottom: 1px solid #e5e5e5;height:2px; width:100%;}
 
 
@@ -316,7 +318,8 @@
 }
 .eventon_events_list .eventon_list_event .evcal_desc .evcal_location, .evo_pop_body .evcal_desc .evcal_location{
 	background:url(../images/icons/tiny_location_icon.png) left center no-repeat;
-	padding-left:10px;	
+	padding-left:10px;
+	margin-right:5px;
 }
 .eventon_events_list .eventon_list_event .evcal_desc .evcal_time, .evo_pop_body .evcal_desc .evcal_time{
 	font-style:normal;
@@ -651,6 +654,9 @@
 #evcal_widget .eventon_events_list .eventon_list_event .evcal_cblock span{font-size:10px}
 #evcal_widget #evcal_list .eventon_list_event .evcal_list_a{padding:5px 0}
 
+#evcal_widget #evcal_head .evcal_arrows{
+	margin-top:0px;
+}
 #evcal_widget #evcal_head #evcal_prev{margin-right:2px; }
 #evcal_widget #evcal_head #evcal_next{margin-left:2px; background-position:-24px 0;
 	width:15px;

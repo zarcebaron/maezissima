@@ -53,36 +53,15 @@ jQuery(document).ready(function($){
 	$('.eventon_events_list').on('click','.desc_trig', function(){
 		var obj = $(this);
 		
-		var exlk = obj.attr('exlk');
+		var exlk = obj.data('exlk');
 		
 		
 		// open as popup
-		if(obj.attr('ux_val')=='3'){
+		if(obj.data('ux_val')=='3'){
 			
-			var cur_window_top = parseInt($(window).scrollTop()) + 50;
-			$('.evo_popin').css({'margin-top':cur_window_top});
-			
-			$('.evo_pop_body').html('');
-			var content = obj.siblings('.event_description').html();
-			var content_front = obj.html();
-			
-			var _content = $(content).not('.evcal_close');
-			
-		
-			$('.evo_pop_body').append('<div class="evopop_top">'+content_front+'</div>').append(_content);
-			
-			var this_map = $('.evo_pop_body').find('.evcal_gmaps');
-			var idd = this_map.attr('id');
-			this_map.attr({'id':idd+'_evop'});
-			
-			$('.evo_popup').fadeIn(300);
-			$('.evo_popbg').fadeIn(300);
-			//$('html,body').animate({ scrollTop: 0 }, 'slow');
-			
-			
+			$('.evo_pop_body').show();
 			obj.evoGenmaps({
-				'fnt':4,
-				'mapSpotId':idd+'_evop'
+				'_action':'lightbox',
 			});
 			
 			
@@ -95,8 +74,8 @@ jQuery(document).ready(function($){
 				$(this).siblings('.event_description').slideToggle();
 				
 				// This will make sure markers and gmaps run once and not multiples			
-				if( obj.attr('gmstat')!= '1'){				
-					obj.attr({'gmstat':'1'});
+				if( obj.data('gmstat')!= '1'){				
+					obj.attr({'data-gmstat':'1'});
 					//load_googlemaps(obj);
 					
 					obj.evoGenmaps({'fnt':2});

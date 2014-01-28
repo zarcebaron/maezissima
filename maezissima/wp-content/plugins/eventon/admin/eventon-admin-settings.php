@@ -93,6 +93,11 @@ if ( ! function_exists( 'eventon_settings' ) ) {
 					update_option('evcal_styles', strip_tags(stripslashes($_POST['evcal_styles'])) );
 				
 				$_POST['settings-updated']='true';			
+			
+
+				eventon_generate_options_css();
+
+			// nonce check
 			}else{
 				die( __( 'Action failed. Please refresh the page and retry.', 'eventon' ) );
 			}	

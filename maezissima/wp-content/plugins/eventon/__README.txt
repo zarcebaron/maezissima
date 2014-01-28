@@ -4,8 +4,8 @@ Plugin Name: EventON
 Author URI: http://ashanjay.com/
 Tags: calendar, event calendar, event posts
 Requires at least: 3.7
-Tested up to: 3.8
-Stable tag: 2.2.3
+Tested up to: 3.8.1
+Stable tag: 2.2.5
 
 Event calendar plugin for wordpress that utilizes WP's custom post type.  
 
@@ -19,6 +19,17 @@ Event calendar plugin for wordpress that utilizes WP's custom post type. This pl
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+= 2.2.5 (2014-1-27)
+ADDED: Event Location Name to eventTop
+ADDED: Custom fields can now have Wysiwyg editor or single line text field to enter data
+UPDATED: dynamic styles loading method to create a tangible eventon_dynamic_styles.css file instead of using admin-ajax.php to avoid long load times
+UPDATED: Appreance color picker UI and the ability to support pluggability
+UPDATED: Datepicker to consider start date when selecting end date
+FIXED: 3rd custom field value not showing on calendar
+FIXED: make sure settings page styles are loaded in page header
+
+NOTE: Make sure to click save on eventON appearance to save new styles
+
 = 2.2.4 (2014-1-12)
 FIXED: Custom meta field values not appearing correct on events page and calendar
 

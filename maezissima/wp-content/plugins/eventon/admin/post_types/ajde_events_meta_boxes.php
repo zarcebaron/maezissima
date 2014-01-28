@@ -180,7 +180,7 @@ function ajde_evcal_show_box_2(){
 		<div class='evo_start_event evo_datetimes'>
 			<div class='evo_date'>
 				<p id='evcal_start_date_label'><?php _e('Event Start Date')?></p>
-				<input class='evcal_data_picker datapicker_on' type='text' id='evcal_start_date' name='evcal_start_date' value='<?php echo ($_START)?$_START[0]:null?>' placeholder='<?php echo $evcal_date_format[1];?>'/>					
+				<input id='evo_dp_from' class='evcal_data_picker datapicker_on' type='text' id='evcal_start_date' name='evcal_start_date' value='<?php echo ($_START)?$_START[0]:null?>' placeholder='<?php echo $evcal_date_format[1];?>'/>					
 				<span>Select a Date</span>
 			</div>					
 			<div class='evcal_date_time switch_for_evsdate evcal_time_selector' <?php echo $show_style_code?>>
@@ -230,11 +230,11 @@ function ajde_evcal_show_box_2(){
 		<?php 
 			$evo_hide_endtime = (!empty($ev_vals["evo_hide_endtime"]) )? $ev_vals["evo_hide_endtime"][0]:null;
 		?>
-		<div class='evo_start_event evo_datetimes switch_for_evsdate'>
+		<div class='evo_end_event evo_datetimes switch_for_evsdate'>
 			<div class='evo_enddate_selection' style='<?php echo ($evo_hide_endtime=='yes')?'display:none':null;?>'>
 			<div class='evo_date'>
 				<p><?php _e('Event End Date','eventon')?></p>
-				<input class='evcal_data_picker datapicker_on' type='text' id='evcal_end_date' name='evcal_end_date' value='<?php echo ($_END)? $_END[0]:null; ?>'/>					
+				<input id='evo_dp_to' class='evcal_data_picker datapicker_on' type='text' id='evcal_end_date' name='evcal_end_date' value='<?php echo ($_END)? $_END[0]:null; ?>'/>					
 				<span><?php _e('Select a Date','eventon')?></span>
 				
 			</div>
@@ -480,20 +480,35 @@ function ajde_evcal_show_box_2(){
 	$evMB_custom = array();
 	for($x =1; $x<4; $x++){	
 		
-		if(!empty($evcal_opt1['evcal_ec_f'.$x.'a1']) && !empty($evcal_opt1['evcal__fai_00c'.$x])){
+		if(eventon_is_custom_meta_field_good($x)){
 			
 			$fa_icon_class = $evcal_opt1['evcal__fai_00c'.$x];
 			
 			ob_start();
 			
 			echo "<div class='evcal_data_block_style1'>
-					<div class='evcal_db_data'>
-						<input type='text' id='_evcal_ec_f".$x."a1_cus' name='_evcal_ec_f".$x."a1_cus' ";
-						
-						echo 'value="'. ((!empty($ev_vals["_evcal_ec_f".$x."a1_cus"]) )? $ev_vals["_evcal_ec_f".$x."a1_cus"][0]:null ).'"';						
-						echo "style='width:100%'/>
-					</div>
-				</div>";
+					<div class='evcal_db_data'>";
+
+				// FIELD
+				$__saved_field_value = (!empty($ev_vals["_evcal_ec_f".$x."a1_cus"]) )? $ev_vals["_evcal_ec_f".$x."a1_cus"][0]:null ;
+				$__field_id = '_evcal_ec_f'.$x.'a1_cus';
+
+				if(!empty($evcal_opt1['evcal_ec_f'.$x.'a2']) && 
+					$evcal_opt1['evcal_ec_f'.$x.'a2']=='textarea'){
+					
+					wp_editor($__saved_field_value, $__field_id);
+					
+				}else{
+					echo "<input type='text' id='".$__field_id."' name='_evcal_ec_f".$x."a1_cus' ";
+							
+							echo 'value="'. $__saved_field_value.'"';						
+							echo "style='width:100%'/>";
+					
+				}
+
+			echo "</div></div>";
+
+
 			$__html = ob_get_clean();
 			
 			$evMB_custom[]= array(
@@ -595,12 +610,14 @@ function ajde_evcal_show_box_2(){
 	
 		<div class='evomb_section' id='<?php echo $mBOX['id'];?>'>			
 			<div class='evomb_header'>
-				<?php if($mBOX['variation']	!='customfield'):?>	
-					<span class='evomb_icon <?php echo $icon_class;?>' style='<?php echo $icon_style?>'></span>
-				<?php else:
-					// custom field with icons
-				?>
+				<?php // custom field with icons
+					if(!empty($mBOX['variation']) && $mBOX['variation']	=='customfield'):?>	
 					<span class='evomb_icon <?php echo $icon_class;?>'><i class='fa <?php echo $mBOX['iconURL']; ?>'></i></span>
+					
+				<?php else:
+					
+				?>
+					<span class='evomb_icon <?php echo $icon_class;?>' style='<?php echo $icon_style?>'></span>
 				<?php endif; ?>
 				<p><?php echo $mBOX['name'];?><?php echo $hiddenVal;?><?php echo $guide;?></p>
 			</div>

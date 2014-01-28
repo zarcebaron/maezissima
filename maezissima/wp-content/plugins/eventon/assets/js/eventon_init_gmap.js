@@ -15,7 +15,8 @@ function initialize(map_canvas_id, address,mapformat, zoom_level, location_type,
 	geocoder = new google.maps.Geocoder();
 			
 	var latlng = new google.maps.LatLng(-34.397, 150.644);	
-	if(scrollwheel=='false' ){
+
+	if(scrollwheel==false ){
 		var myOptions = {			
 			center: latlng,	
 			mapTypeId:mapformat,	

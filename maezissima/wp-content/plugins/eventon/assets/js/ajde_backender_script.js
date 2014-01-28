@@ -49,33 +49,49 @@ jQuery(document).ready(function($){
 			$('#acus_arrow').css({'top':(menu_position.top+3)+'px'}).show();
 		}
 
+
+	// color circle guide popup
+		$('#evcal_002 .hastitle').hover(function(){
+			var poss = $(this).position();
+			var title = $(this).attr('alt');
+			//alert(poss.top)
+			$('#evo_color_guide').css({'top':(poss.top-33)+'px', 'left':(poss.left+11)}).html(title).show();
+			//$('#evo_color_guide').show();
+
+		},function(){
+			$('#evo_color_guide').hide();
+
+		});
+
+
+
 	// color picker
-	/*
-	$('.backender_colorpicker').ColorPicker({
-		color: '#206177',
-		onSubmit: function(hsb, hex, rgb, el) {
-			$(el).attr({'value':hex});
-			$(el).siblings('.acus_colorp').css({'background-color':'#'+hex});
-			$(el).ColorPickerHide();
-		}
-	});
-	*/
-	$('.colorselector').ColorPicker({
-		onBeforeShow: function(){
-			$(this).ColorPickerSetColor( $(this).attr('hex'));
-		},	
-		onChange:function(hsb, hex, rgb,el){
-			//console.log(hex);
-			//$(el).attr({'backgroundColor': '#' + hex});
-			$(el).html( hex);
-		},	
-		onSubmit: function(hsb, hex, rgb, el) {
-			$(el).siblings('input').attr({'value':hex});
-			$(el).css('backgroundColor', '#' + hex);
-			$(el).attr({'title': '#' + hex});
-			$(el).ColorPickerHide();
-		}
-	});
+		/*
+		$('.backender_colorpicker').ColorPicker({
+			color: '#206177',
+			onSubmit: function(hsb, hex, rgb, el) {
+				$(el).attr({'value':hex});
+				$(el).siblings('.acus_colorp').css({'background-color':'#'+hex});
+				$(el).ColorPickerHide();
+			}
+		});
+		*/
+		$('.colorselector').ColorPicker({
+			onBeforeShow: function(){
+				$(this).ColorPickerSetColor( $(this).attr('hex'));
+			},	
+			onChange:function(hsb, hex, rgb,el){
+				//console.log(hex);
+				//$(el).attr({'backgroundColor': '#' + hex});
+				$(el).html( hex);
+			},	
+			onSubmit: function(hsb, hex, rgb, el) {
+				$(el).siblings('input').attr({'value':hex});
+				$(el).css('backgroundColor', '#' + hex);
+				$(el).attr({'title': '#' + hex});
+				$(el).ColorPickerHide();
+			}
+		});
 
 	var fa_icon_selection = '';
 

@@ -12,17 +12,72 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
+// check whether custom fields are activated and have values set ready
+function eventon_is_custom_meta_field_good($number, $opt=''){
+	$opt = (!empty($opt))? $opt: get_option('evcal_options_evcal_1');
+	return ( !empty($opt['evcal_af_'.$number]) && $opt['evcal_af_'.$number]=='yes' && !empty($opt['evcal_ec_f'.$number.'a1']) && !empty($opt['evcal__fai_00c'.$number])  )? true: false;
+}
 
-// check if eventon shortcode included in content
-function has_eventon_shortcode($post_content){
-	if(has_shortcode($post_content, 'add_eventon_menu') || 
-		has_shortcode($post_content, 'add_eventon_menu_item')){
 
-		return true;
+/*
+	Dynamic styles generation 
+*/
+function eventon_generate_options_css($newdata='') {
+ 
+	/** Define some vars **/
+	$data = $newdata; 
+	$uploads = wp_upload_dir();
+	
+	//$css_dir = get_template_directory() . '/css/'; // Shorten code, save 1 call
+	$css_dir = AJDE_EVCAL_DIR . '/'. EVENTON_BASE.  '/assets/css/'; // Shorten code, save 1 call
+	
+	/** Save on different directory if on multisite **/
+	if(is_multisite()) {
+		$aq_uploads_dir = trailingslashit($uploads['basedir']);
+	} else {
+		$aq_uploads_dir = $css_dir;
+	}
+	
+	/** Capture CSS output **/
+	ob_start();
+	require($css_dir . 'dynamic_styles.php');
+	$css = ob_get_clean();
+
+	//print_r($css);
+	
+	/** Write to options.css file **/
+	WP_Filesystem();
+	global $wp_filesystem;
+	if ( ! $wp_filesystem->put_contents( $aq_uploads_dir . 'eventon_dynamic_styles.css', $css, 0644) ) {
+	    return true;
+	}
+	
+}
+
+
+// check for a shortcode in post content
+function has_eventon_shortcode( $shortcode='', $post_content=''){
+
+	global $post;
+
+	$shortcode = (!empty($shortcode))? $shortcode : 'add_eventon';
+ 
+	$post_content = (!empty($post_content))? $post_content: 
+		( (!empty($post->post_content))? $post->post_content:'' );
+
+	if(!empty($post_content)){
+		if(has_shortcode($post_content, $shortcode) || 
+			has_shortcode($post_content, $shortcode)){
+	
+			return true;
+		}else{
+			return false;
+		}
 	}else{
 		return false;
 	}
 }
+
 
 
 
@@ -566,7 +621,7 @@ function eventon_get_event_excerpt($text, $excerpt_length, $default_excerpt='', 
 	}
 	
 	
-	$titletx = ($title)? '<h3>' . eventon_get_custom_language($eventon->evo_generator->evopt2, 'evcal_evcard_details','Event Details').'</h3>':null;
+	$titletx = ($title)? '<h3 class="padb5 evo_h3">' . eventon_get_custom_language($eventon->evo_generator->evopt2, 'evcal_evcard_details','Event Details').'</h3>':null;
 	
 	$content = '<div class="event_excerpt" style="display:none">'.$titletx.'<p>'. $content . '</p></div>';
 	

@@ -292,6 +292,9 @@ class EvcalWidget_SC extends WP_Widget{
 		global $eventon;
 
 		extract($instance);
+
+		$evo_title = (!empty($evo_title))? $evo_title: null;
+		$evo_shortcodeW = (!empty($evo_shortcodeW))? $evo_shortcodeW: null;
 		// HTML
 		?>
 		<div id='eventon_widget_settings' class='eventon_widget_settings'>

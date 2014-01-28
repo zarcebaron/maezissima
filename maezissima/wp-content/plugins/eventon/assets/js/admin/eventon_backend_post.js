@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
 
 	});
 
-	(//makeInputSelect("evcal_location_field");
+	//makeInputSelect("evcal_location_field");
 		function makeInputSelect(id) {
 		    var $sel = $("#" + id);
 		    var $inp = $("#" + id + "_Other");
@@ -83,7 +83,7 @@ jQuery(document).ready(function($){
 		    //
 		    $sel.after($inp);
 		    $inp.hide();
-		})
+		}
 
 
 	
@@ -232,6 +232,7 @@ jQuery(document).ready(function($){
 		// yes
 		if($(this).hasClass('btn_at_no')){
 			$('.evo_enddate_selection').slideUp();
+			$('#evo_dp_to').attr({'value':''});
 		}else{
 			$('.evo_enddate_selection').slideDown();
 		}
@@ -240,7 +241,20 @@ jQuery(document).ready(function($){
 	
 	//date picker on 
 	var date_format = $('#evcal_dates').attr('date_format');
-	$('.datapicker_on').datepicker({ dateFormat: date_format });
+	$('#evo_dp_from').datepicker({ 
+		dateFormat: date_format,
+		numberOfMonths: 2,
+		onClose: function( selectedDate ) {
+	        $( "#evo_dp_to" ).datepicker( "option", "minDate", selectedDate );
+	    }
+	});
+	$('#evo_dp_to').datepicker({ 
+		dateFormat: date_format,
+		numberOfMonths: 2,
+		onClose: function( selectedDate ) {
+        	$( "#evo_dp_from" ).datepicker( "option", "maxDate", selectedDate );
+      	}
+	});
 	
 	//yes no buttons in event edit page
 	// all day event switch

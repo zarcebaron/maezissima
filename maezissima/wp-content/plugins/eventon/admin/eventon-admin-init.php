@@ -52,8 +52,7 @@ function eventon_admin_menu() {
 		AJDE_EVCAL_URL.'/assets/images/eventon_menu_icon.png'
 	);
 
-	
-	
+
     add_action( 'load-' . $main_page, 'eventon_admin_help_tab' );	
 	
 	
@@ -135,6 +134,8 @@ add_action('admin_init', 'eventon_admin_init');
  * Include and display the settings page.
  */
 function eventon_settings_page() {
+	
+
 	include_once( 'eventon-admin-settings.php' );
 	eventon_settings();
 }
@@ -178,14 +179,14 @@ function eventon_admin_post_script() {
  * Include admin scripts and styles.
  */
 function eventon_admin_scripts() {
-	global $EventON, $pagenow;
+	global $eventon, $pagenow;
 	
 	// JQuery UI Styles
 	$calendar_ui_style_src = AJDE_EVCAL_URL.'/assets/css/jquery-ui.min.css';
 	wp_enqueue_style( 'eventon_JQ_UI',$calendar_ui_style_src);
 	
 	// Scripts/ Styles for eventON Settings page only		
-	if($pagenow=='admin.php' && $_GET['page']=='eventon'){
+	if($pagenow=='admin.php' && $_GET['page']=='eventon'|| $_GET['page']=='action_user'){
 		wp_enqueue_script('evcal_backend_all',AJDE_EVCAL_URL.'/assets/js/eventon_all_backend.js',array('jquery'),1.0,true);
 		wp_enqueue_script('evcal_backend',AJDE_EVCAL_URL.'/assets/js/eventon_backend.js',array('jquery'),1.0,true);		
 		wp_enqueue_style( 'backend_evcal_settings',AJDE_EVCAL_URL.'/assets/css/backend_evcal_settings.css');
@@ -199,6 +200,9 @@ function eventon_admin_scripts() {
 			wp_enqueue_style('thickbox');
 		}
 		
+		$eventon->enqueue_backender_styles();
+		$eventon->register_backender_scripts();
+
 		do_action('eventon_admin_scripts');
 	}
 	

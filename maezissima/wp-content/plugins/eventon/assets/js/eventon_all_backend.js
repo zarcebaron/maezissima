@@ -190,11 +190,6 @@ jQuery(document).ready(function($){
 
 	
 	
-	
-	
-	
-	
-	
 	// ==========================
 	// shortcode popup box
 	// evoPOSH
