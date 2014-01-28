@@ -39,7 +39,7 @@
 </head>
 
 <body <?php body_class('body-class'); ?>>
-<!--
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -48,7 +48,7 @@
   js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=306499332820130";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
--->
+
 
 
 <!-- Start Top Content -->
