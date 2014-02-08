@@ -534,24 +534,10 @@ function ct_scripts_method() {
 		wp_register_script('jquery-bootstrap',get_template_directory_uri().'/js/bootstrap.js',false, null , true);
 		wp_enqueue_script('jquery-bootstrap',array('jquery'));
 
-
 		/* Custom JS */
 		wp_register_script('custom-js',get_template_directory_uri().'/js/custom.js',false, null , true);
 		wp_enqueue_script('custom-js',array('jquery'));
 
-		/* EventON */
-		wp_register_script('eventon_script',plugins_url().'/eventon/assets/js/eventon_script.js',false, null , true);
-		wp_enqueue_script('eventon_script',array('jquery'));
-
-		/* EventON - Init Gmap */
-		wp_register_script('eventon_init_gmap',plugins_url().'/eventon/assets/js/eventon_init_gmap.js',false, null , true);
-		wp_enqueue_script('eventon_init_gmap',array('jquery'));		
-
-		/* EventON - Gen Gmap */
-		wp_register_script('eventon_gen_maps',plugins_url().'/eventon/assets/js/eventon_gen_maps.js',false, null , true);
-		wp_enqueue_script('eventon_gen_maps',array('jquery'));							
-		
-	
 	} /* End Include jQuery Libraries */
   }
 }

@@ -8,7 +8,8 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> xmlns:fb="http://ogp.me/ns/fb#">
+
 <!--<![endif]-->
 
 <head>
@@ -35,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-responsive.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,700,700italic|Amaranth:700,700italic' rel='stylesheet' type='text/css'>
+  
 
 </head>
 
@@ -45,9 +47,10 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=306499332820130";
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=306499332820130";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
 
 
 

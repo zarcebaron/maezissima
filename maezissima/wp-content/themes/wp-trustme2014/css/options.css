@@ -1,13 +1,13 @@
 
 /* Body BG Color */
 body, .body-class {
-	background: url() left top repeat;
-}
+	background: none;
+	background-color: #FFFEF3}
 
 /* Top Block BG */
 #top-block-bg {
-	background: url() left top repeat;
-}
+	background: none;
+	background-color: #E8536E }
 
 /* Title BG */
 .widget-title {
@@ -18,80 +18,80 @@ body, .body-class {
 
 /* Theme Color */
 li.current_page_item a, .current_page_item, li.current-menu-parent,.current-menu-parent, .current-menu-ancestor > a, li .current-menu-item,  .current-menu-item a {
-	border-bottom-color: #7d9dab !important;
+	border-bottom-color: #E8536E !important;
 }
 
 
 .author-profile-block {
-	border-bottom: 4px solid #7d9dab !important;
+	border-bottom: 4px solid #E8536E !important;
 }
 .nav-tabs .active a, .nav-tabs .active a:hover, .nav-tabs li a:hover {
-	border-bottom: 4px solid #7d9dab !important;
+	border-bottom: 4px solid #E8536E !important;
 }
-.sf-menu a:hover { border-bottom: 5px solid #7d9dab; }
+.sf-menu a:hover { border-bottom: 5px solid #E8536E; }
 
-.sf-menu ul li:hover { background: #7d9dab; }
-.widget li.cat-item a, .left-col a, .right-col a, .tweet_text a, .copyright a:hover, .add-info a:hover, .post-title a:hover  { color: #7d9dab; }
+.sf-menu ul li:hover { background: #E8536E; }
+.widget li.cat-item a, .left-col a, .right-col a, .tweet_text a, .copyright a:hover, .add-info a:hover, .post-title a:hover  { color: #E8536E; }
 
 .category-item a, .title-block .category-item a, .entry-content a, .btn-link {
-	color: #7d9dab; 
+	color: #E8536E; 
 }
 .top-img {
-	border-bottom: 4px solid #7d9dab;
+	border-bottom: 4px solid #E8536E;
 }
 span.page-numbers.current, .pagination a:hover, .pagination .current {
-	border-bottom: 4px solid #7d9dab}
-.colored-title { color: #98ab41; }
+	border-bottom: 4px solid #E8536E}
+.colored-title { color: #E8536E; }
 
 #footer .widget .tagcloud a[class|="tag-link"]:hover, #footer #entry-post a[rel="tag"]:hover, #footer .tagcloud a[class|="tag-link"]:hover {
-	border-bottom-color: #7d9dab;
+	border-bottom-color: #E8536E;
 }
-.entry-post-category a { color: #7d9dab; }
-a:hover { color: #7d9dab; } 
+.entry-post-category a { color: #E8536E; }
+a:hover { color: #E8536E; } 
 
-h2.entry-post-title a:hover { color: #7d9dab; }
+h2.entry-post-title a:hover { color: #E8536E; }
 
-.tooltip-inner { border-bottom: 2px solid #7d9dab; }
-.tooltip.top .tooltip-arrow { border-top-color: #7d9dab; }
+.tooltip-inner { border-bottom: 2px solid #E8536E; }
+.tooltip.top .tooltip-arrow { border-top-color: #E8536E; }
 
-table#wp-calendar td#today { background-color: #7d9dab; }
+table#wp-calendar td#today { background-color: #E8536E; }
 
-::selection { 	background-color: #7d9dab !important; color: #fff	 }
+::selection { 	background-color: #E8536E !important; color: #fff	 }
 
-::-moz-selection { 	background-color: #7d9dab !important; color: #FFF	 }
+::-moz-selection { 	background-color: #E8536E !important; color: #FFF	 }
 
 
 /* Theme Color */
 
-.top-menu-block, #bottom-block-bg { background-color: #2D2D2D }
+.top-menu-block, #bottom-block-bg { background-color: #fffef3 }
 
 .triangles:after, .triangles:before, .triangles-footer:after{
-    background-image: -webkit-linear-gradient(45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D ),
-                      -webkit-linear-gradient(-45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D );
-    background-image:    -moz-linear-gradient(45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D ),
-                         -moz-linear-gradient(-45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D );
-    background-image:     -ms-linear-gradient(45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D ),
-                          -ms-linear-gradient(-45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D );
-    background-image:      -o-linear-gradient(45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D ),
-                           -o-linear-gradient(-45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D );
-    background-image:         linear-gradient(45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D ),
-                              linear-gradient(-45deg, #2D2D2D 25%, transparent 25%, transparent 75%, #2D2D2D 75%, #2D2D2D );
+    background-image: -webkit-linear-gradient(45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 ),
+                      -webkit-linear-gradient(-45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 );
+    background-image:    -moz-linear-gradient(45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 ),
+                         -moz-linear-gradient(-45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 );
+    background-image:     -ms-linear-gradient(45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 ),
+                          -ms-linear-gradient(-45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 );
+    background-image:      -o-linear-gradient(45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 ),
+                           -o-linear-gradient(-45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 );
+    background-image:         linear-gradient(45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 ),
+                              linear-gradient(-45deg, #fffef3 25%, transparent 25%, transparent 75%, #fffef3 75%, #fffef3 );
 }
 
 .triangles-footer:before, .triangles-footer:after {
-    background-image: -webkit-linear-gradient(45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D ),
-                      -webkit-linear-gradient(135deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D );
+    background-image: -webkit-linear-gradient(45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3 ),
+                      -webkit-linear-gradient(135deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3 );
 
-    background-image:     -moz-linear-gradient(-45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D), 
-    						-moz-linear-gradient(45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D);
+    background-image:     -moz-linear-gradient(-45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3), 
+    						-moz-linear-gradient(45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3);
 
-    background-image:     -ms-linear-gradient(-45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D), 
-    						-ms-linear-gradient(45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D);
+    background-image:     -ms-linear-gradient(-45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3), 
+    						-ms-linear-gradient(45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3);
 
 
-    background-image:     -o-linear-gradient(-45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D), 
-    						-o-linear-gradient(45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D);
+    background-image:     -o-linear-gradient(-45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3), 
+    						-o-linear-gradient(45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3);
 
-    background-image:     linear-gradient(-45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D), 
-    						linear-gradient(45deg, #2D2D2D 50%, transparent 50%, transparent 100%, #2D2D2D 100%, #2D2D2D);
+    background-image:     linear-gradient(-45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3), 
+    						linear-gradient(45deg, #fffef3 50%, transparent 50%, transparent 100%, #fffef3 100%, #fffef3);
 }

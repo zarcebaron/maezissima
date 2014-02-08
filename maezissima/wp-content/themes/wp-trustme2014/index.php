@@ -79,4 +79,4 @@ global $data, $page, $paged;
   <!-- END CONTENT ENTRY -->
 
 
-
+<?php get_footer(); ?>
